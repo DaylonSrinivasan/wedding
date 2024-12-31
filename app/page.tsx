@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Parisienne } from 'next/font/google'
  
-const parisienne = Parisienne({ weight: '400'})
+const parisienne = Parisienne({ weight: '400', subsets: ['latin']})
 
 export default function WeddingInvitation() {
   const [activeTab, setActiveTab] = useState<'Homepage' | 'Schedule' | 'Travel' | 'FAQ'>('Homepage');
