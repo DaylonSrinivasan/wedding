@@ -1,11 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Live Version
 
-## Getting Started
+https://rika-and-daylon.vercel.app
 
-First, run the development server:
+## Running Locally
 
 ```bash
-nvm install node --latest-npm
 npm run dev
 ```
 
