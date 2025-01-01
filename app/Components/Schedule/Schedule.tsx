@@ -20,9 +20,9 @@ const Gallery = () => {
                 />
             </motion.div>
             <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
+                initial={{ opacity: 0, x: -300}}
+                whileInView={{ opacity: 1, x: -300 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.75 }}
                 className="ml-6 text-left font-serif text-gray-800"
             >
                 <h2 className="text-3xl mb-4 font-bold">Rika Yokoji and Daylon Srinivasan</h2>

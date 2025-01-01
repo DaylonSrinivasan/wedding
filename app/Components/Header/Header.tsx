@@ -3,10 +3,8 @@
 import React from "react";
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Inter } from 'next/font/google'
 import BackgroundImage from '../../../public/background.jpg';
 
-const inter = Inter({ subsets: ['latin'] })
 
 const Header = () => {
     return (

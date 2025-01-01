@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { Parisienne } from 'next/font/google'
 import Image from 'next/image'
-import Header from './Components/Header/Header'
 import engagementShot from '../public/engagement-shot.jpg'
 
  
