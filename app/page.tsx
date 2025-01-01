@@ -2,11 +2,14 @@
 
 import { useState } from 'react';
 import { Parisienne } from 'next/font/google'
+import Image from 'next/image'
+import engagementShot from '../public/engagement-shot.jpg'
+
  
 const parisienne = Parisienne({ weight: '400', subsets: ['latin']})
 
 export default function WeddingInvitation() {
-  const [activeTab, setActiveTab] = useState<'Homepage' | 'Schedule' | 'Travel' | 'FAQ'>('Homepage');
+  const [activeTab, setActiveTab] = useState<string>('Homepage');
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -18,7 +21,7 @@ export default function WeddingInvitation() {
             <p className="text-4xl font-serif font-bold text-black">Daylon Srinivasan</p>
             <p className="text-2xl font-serif text-black mt-4">August 15, 2025</p>
             <p className="text-xl font-serif text-black mt-2">Saratoga, CA</p>
-            <p className="mt-6 text-black">Welcome to Rika & Daylon's wedding website!</p>
+            <p className="mt-6 text-black">Welcome to Rika & Daylon&apos;s wedding website!</p>
           </div>
         );
       case 'Schedule':
@@ -39,12 +42,12 @@ export default function WeddingInvitation() {
     >
       <header className="text-center py-6">
         <h1 className="text-4xl font-bold text-black">Rika & Daylon</h1>
-        <p className="text-black">We can’t wait to celebrate our special day with you!</p>
+        <p className="text-black">We can&apos;t wait to celebrate our special day with you!</p>
       </header>
 
       <div className="flex justify-center py-4">
-        <img
-          src="/engagement-shot.jpg"
+        <Image
+          src={engagementShot}
           alt="Bride and Groom"
           className="w-60 h-60 object-cover rounded-full shadow-lg"
         />
@@ -59,7 +62,7 @@ export default function WeddingInvitation() {
                 ? 'bg-blue-500 text-white'
                 : 'bg-gray-200 text-black hover:bg-gray-300'
             }`}
-            onClick={() => setActiveTab(tab as any)}
+            onClick={() => setActiveTab(tab)}
           >
             {tab}
           </button>
