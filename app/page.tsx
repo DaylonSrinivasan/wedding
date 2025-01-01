@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Parisienne } from 'next/font/google'
 import Image from 'next/image'
+import Header from './Components/Header/Header'
 import engagementShot from '../public/engagement-shot.jpg'
 
  
@@ -44,7 +45,6 @@ export default function WeddingInvitation() {
         <h1 className="text-4xl font-bold text-black">Rika & Daylon</h1>
         <p className="text-black">We can&apos;t wait to celebrate our special day with you!</p>
       </header>
-
       <div className="flex justify-center py-4">
         <Image
           src={engagementShot}
