@@ -17,7 +17,6 @@ const Welcome: React.FC<WelcomeProps> = ({ language }) => {
             welcomeMessage: [
                 "Welcome to our wedding website! We are absolutely thrilled to have you here to celebrate with us!",
                 "Get ready for a day full of love, laughter, happy tears, and maybe a few surprises along the way.",
-                "Feel free to explore the rest of this page for all the details.",
                 "Got questions? Daylon and Rika are just a message away!"
             ],
         },
@@ -26,19 +25,18 @@ const Welcome: React.FC<WelcomeProps> = ({ language }) => {
             welcomeMessage: [
                 "私たちの結婚式のウェブサイトへようこそ！一緒にお祝いできることをとても嬉しく思っています！",
                 "愛と笑い、幸せな涙、そしていくつかのサプライズに満ちた一日をお楽しみください。",
-                "詳細はこのページを自由に探してみてください。",
                 "質問がありますか？デイロンとリカにお気軽にメッセージを送ってください！"
-            ],            
+            ],
         },
     };
 
     const { header, welcomeMessage } = textContent[language];
 
     return (
-        <section className="flex flex-col items-center justify-center p-6"> {/* Use flex-col to stack items */}
-            <SectionHeader text={header} /> {/* Place header at the top */}
+        <section className="flex flex-col items-center justify-center p-4 max-w-6xl mx-auto">
+            <SectionHeader text={header} />
 
-            <div className="flex flex-col md:flex-row items-center justify-between mt-6"> {/* Added mt-6 for space */}
+            <div className="flex flex-col md:flex-row items-center justify-between mt-6"> 
                 <motion.div
                     initial={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, x: 0 }}
