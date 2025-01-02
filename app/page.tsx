@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Header from "./Components/Header/Header";
-import Schedule from "./Components/Schedule/Schedule";
+import Welcome from "./Components/Welcome/Welcome";
 import Footer from "./Components/Footer/Footer";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <div>
             <Header language={language} onLanguageChange={handleLanguageChange} />
-            <Schedule language={language} />
+            <Welcome language={language} />
             <Footer language={language}/>
         </div>
     );
