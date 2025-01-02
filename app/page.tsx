@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "./Components/Header/Header";
 import Welcome from "./Components/Welcome/Welcome";
+import Events from "./Components/Events/Events";
 import Footer from "./Components/Footer/Footer";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <div>
             <Header language={language} onLanguageChange={handleLanguageChange} />
             <Welcome language={language} />
+            <Events language={language} />
             <Footer language={language}/>
         </div>
     );
