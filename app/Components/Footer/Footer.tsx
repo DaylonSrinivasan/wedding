@@ -1,13 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 interface FooterProps {
     language: 'en' | 'jp';
 }
 
 const Footer: React.FC<FooterProps> = ({ language }) => {
-    // Text content for different languages
+    const [isVisible, setIsVisible] = useState(true);
+
     const textContent = {
         en: {
             madeWith: "Made with",
@@ -23,27 +24,38 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
         },
     };
 
-    const { madeWith, heart, seeCode, github } = textContent[language];
+    const currentText = textContent[language] || textContent['en'];
 
     return (
         <main className="relative w-full">
-            {/* Footer */}
-            <footer className="absolute bottom-0 w-full py-4 bg-gray-800 text-center">
+            <footer
+                className={`absolute bottom-0 w-full py-4 bg-gray-800 text-center flex items-center justify-center relative transition-opacity duration-300 ${
+                    isVisible ? "opacity-100 visible" : "opacity-0 invisible"
+                }`}
+            >
                 <p
                     className="text-sm font-sans text-white"
                     style={{ fontFamily: "Inter, sans-serif" }}
                 >
-                    {madeWith} <span className="text-red-500">{heart}</span>. {seeCode}{" "}
+                    {currentText.madeWith} <span className="text-red-500">{currentText.heart}</span>.{" "}
+                    {currentText.seeCode}{" "}
                     <a
                         href="https://github.com/daylonsrinivasan/wedding"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-400 underline hover:text-blue-300"
                     >
-                        {github}
+                        {currentText.github}
                     </a>
                     !
                 </p>
+                <button
+                    onClick={() => setIsVisible(false)}
+                    className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-xs bg-transparent hover:text-red-500 focus:outline-none"
+                    aria-label="Dismiss footer"
+                >
+                    ✖
+                </button>
             </footer>
         </main>
     );
