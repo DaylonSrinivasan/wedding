@@ -1,10 +1,9 @@
-"use client";
-
 import React from "react";
 import Image from 'next/image';
 import EngagementPhoto from '../../../public/engagement-shot.jpg';
 import { motion } from 'framer-motion';
-import SectionHeader from '../SectionHeader/SectionHeader'; // Import the SectionHeader component
+import Event from '../Event/Event';
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 interface EventsProps {
     language: 'en' | 'jp';
@@ -14,41 +13,60 @@ const Events: React.FC<EventsProps> = ({ language }) => {
     const textContent = {
         en: {
             header: "Events",
-            text: "This section is a WIP.",
+            usWedding: {
+                title: "US Wedding",
+                description: "Our California wedding!",
+                time: "August 15, 2025",
+                location: "Saratoga Springs, California"
+            },
+            japanWedding: {
+                title: "Japan Wedding",
+                description: "Our Japan wedding!",
+                time: "September 20, 2025",
+                location: "Tokyo, Japan"
+            }
         },
-        jp: {  
+        jp: {
             header: "イベント",
-            text: "This section is a WIP.",   
-        },
+            usWedding: {
+                title: "アメリカの結婚式",
+                description: "カリフォルニアでの結婚式！",
+                time: "2025年8月15日",
+                location: "カリフォルニア州サラトガスプリングス"
+            },
+            japanWedding: {
+                title: "日本の結婚式",
+                description: "日本での結婚式！",
+                time: "2025年9月20日",
+                location: "東京都"
+            }
+        }
     };
+    
 
-    const { header, text } = textContent[language];
+    const { header, usWedding, japanWedding } = textContent[language];
 
     return (
         <section className="flex flex-col items-center justify-center p-6">
             <SectionHeader text={header} />
-
-            <div className="flex flex-col md:flex-row items-center justify-between mt-6">
+            <div className="flex w-full overflow-x-auto">
                 <motion.div
-                    initial={{ opacity: 0, x: -100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, ease: "easeOut" }}
-                    className="w-full md:w-1/2"
+                    className="flex-shrink-0 w-full"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
                 >
-                    <Image
-                        src={EngagementPhoto}
-                        alt="Engagement photo"
-                        className="rounded-lg h-auto max-h-[50vh] w-full object-cover"
-                    />
+                    <Event img={EngagementPhoto} title={usWedding.title} description={usWedding.description} time={usWedding.time} location={usWedding.location} />
                 </motion.div>
-
                 <motion.div
-                    initial={{ opacity: 0, x: -300 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, ease: "easeOut", delay: 0.75 }}
-                    className="mt-6 md:mt-0 md:ml-6 text-left font-serif text-gray-800"
+                    className="flex-shrink-0 w-full"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
                 >
-                    <p className="text-2xl leading-relaxed mb-4">{text}</p>
+                    <Event img={EngagementPhoto} title={japanWedding.title} description={japanWedding.description} time={japanWedding.time} location={japanWedding.location} />
                 </motion.div>
             </div>
         </section>
