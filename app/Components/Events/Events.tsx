@@ -1,5 +1,4 @@
 import React from "react";
-import Image from 'next/image';
 import EngagementPhoto from '../../../public/engagement-shot.jpg';
 import { motion } from 'framer-motion';
 import Event from '../Event/Event';
