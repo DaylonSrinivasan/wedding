@@ -4,7 +4,9 @@ import React from "react";
 import Image from 'next/image';
 import EngagementPhoto from '../../../public/engagement-shot.jpg';
 import { motion } from 'framer-motion';
-import SectionHeader from '../SectionHeader/SectionHeader'; // Import the SectionHeader component
+import SectionHeader from '../SectionHeader/SectionHeader';
+import Section from '../Section/Section';
+
 
 interface WelcomeProps {
     language: 'en' | 'jp';
@@ -33,7 +35,7 @@ const Welcome: React.FC<WelcomeProps> = ({ language }) => {
     const { header, welcomeMessage } = textContent[language];
 
     return (
-        <section className="flex flex-col items-center justify-center p-4 max-w-6xl mx-auto">
+        <Section>
             <SectionHeader text={header} />
 
             <div className="flex flex-col md:flex-row items-center justify-between mt-6"> 
@@ -61,7 +63,7 @@ const Welcome: React.FC<WelcomeProps> = ({ language }) => {
                     ))}
                 </motion.div>
             </div>
-        </section>
+        </Section>
     );
 };
 

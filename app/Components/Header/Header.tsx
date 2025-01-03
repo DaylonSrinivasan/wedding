@@ -2,6 +2,8 @@
 
 import React from "react";
 import { motion } from 'framer-motion';
+import Section from '../Section/Section';
+
 
 interface HeaderProps {
     language: 'en' | 'jp';
@@ -13,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ language, onLanguageChange }) => {
     const headerText = language === 'en' ? 'Rika and Daylon' : 'リカとデイロン';
 
     return (
-        <main className="relative w-full h-screen flex flex-col items-center justify-center">
+        <Section>
             {/* Animated Text */}
             <motion.h1
                 initial={{ opacity: 0, y: 50 }}
@@ -52,7 +54,7 @@ const Header: React.FC<HeaderProps> = ({ language, onLanguageChange }) => {
                     日本語
                 </button>
             </motion.div>
-        </main>
+        </Section>
     );
 };
 

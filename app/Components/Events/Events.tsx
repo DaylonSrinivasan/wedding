@@ -3,6 +3,7 @@ import EngagementPhoto from '../../../public/engagement-shot.jpg';
 import { motion } from 'framer-motion';
 import Event from '../Event/Event';
 import SectionHeader from '../SectionHeader/SectionHeader';
+import Section from '../Section/Section';
 
 interface EventsProps {
     language: 'en' | 'jp';
@@ -46,7 +47,7 @@ const Events: React.FC<EventsProps> = ({ language }) => {
     const { header, usWedding, japanWedding } = textContent[language];
 
     return (
-        <section className="flex flex-col items-center justify-center p-6">
+        <Section>
             <SectionHeader text={header} />
             <div className="flex w-full overflow-x-auto">
                 <motion.div
@@ -68,7 +69,7 @@ const Events: React.FC<EventsProps> = ({ language }) => {
                     <Event img={EngagementPhoto} title={japanWedding.title} description={japanWedding.description} time={japanWedding.time} location={japanWedding.location} />
                 </motion.div>
             </div>
-        </section>
+        </Section>
     );
 };
 
