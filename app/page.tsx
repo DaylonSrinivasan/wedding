@@ -9,7 +9,6 @@ import Footer from "./Components/Footer/Footer";
 
 export default function Home() {
     const [language, setLanguage] = useState<'en' | 'jp'>('en');
-    const [isScrolling, setIsScrolling] = useState(false);
     const [showButtons, setShowButtons] = useState(true);
 
     const handleLanguageChange = (newLanguage: 'en' | 'jp') => {
@@ -29,13 +28,11 @@ export default function Home() {
         let timeoutId: NodeJS.Timeout;
 
         const handleScroll = () => {
-            setIsScrolling(true);
             if (timeoutId) {
                 clearTimeout(timeoutId);
             }
             setShowButtons(true); // Show buttons when user starts scrolling
             timeoutId = setTimeout(() => {
-                setIsScrolling(false);
                 setShowButtons(false);
             }, 2000); // Hide after 2 seconds of inactivity
         };
