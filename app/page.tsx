@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import Header from "./Components/Header/Header";
+import Language from "./Components/Language/Language";
 import Welcome from "./Components/Welcome/Welcome";
 import Events from "./Components/Events/Events";
 import Footer from "./Components/Footer/Footer";
@@ -18,7 +18,7 @@ export default function Home() {
         setLanguage(newLanguage);
     };
 
-    const headerRef = useRef<HTMLDivElement | null>(null);
+    const languageRef = useRef<HTMLDivElement | null>(null);
     const welcomeRef = useRef<HTMLDivElement | null>(null);
     const eventsRef = useRef<HTMLDivElement | null>(null);
     const travelRef = useRef<HTMLDivElement | null>(null);
@@ -64,10 +64,10 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
             >
                 <button
-                    onClick={() => scrollToSection(headerRef)}
+                    onClick={() => scrollToSection(languageRef)}
                     className="flex-1 text-center py-2 px-4 bg-orange-400 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-300"
                 >
-                    Header
+                    Language
                 </button>
                 <button
                     onClick={() => scrollToSection(welcomeRef)}
@@ -95,8 +95,8 @@ export default function Home() {
                 </button>
             </motion.nav>
 
-            <div ref={headerRef}>
-                <Header language={language} onLanguageChange={handleLanguageChange} />
+            <div ref={languageRef}>
+                <Language language={language} onLanguageChange={handleLanguageChange} />
             </div>
             <div ref={welcomeRef}>
                 <Welcome language={language} />
