@@ -6,6 +6,9 @@ import Header from "./Components/Header/Header";
 import Welcome from "./Components/Welcome/Welcome";
 import Events from "./Components/Events/Events";
 import Footer from "./Components/Footer/Footer";
+import Travel from "./Components/Travel/Travel";
+import Registry from "./Components/Registry/Registry";
+
 
 export default function Home() {
     const [language, setLanguage] = useState<'en' | 'jp'>('en');
@@ -18,6 +21,10 @@ export default function Home() {
     const headerRef = useRef<HTMLDivElement | null>(null);
     const welcomeRef = useRef<HTMLDivElement | null>(null);
     const eventsRef = useRef<HTMLDivElement | null>(null);
+    const travelRef = useRef<HTMLDivElement | null>(null);
+    const registryRef = useRef<HTMLDivElement | null>(null);
+
+
 
     const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -74,6 +81,18 @@ export default function Home() {
                 >
                     Events
                 </button>
+                <button
+                    onClick={() => scrollToSection(travelRef)}
+                    className="flex-1 text-center py-2 px-4 bg-orange-400 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-300"
+                >
+                    Travel
+                </button>
+                <button
+                    onClick={() => scrollToSection(registryRef)}
+                    className="flex-1 text-center py-2 px-4 bg-orange-400 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-300"
+                >
+                    Registry
+                </button>
             </motion.nav>
 
             <div ref={headerRef}>
@@ -84,6 +103,12 @@ export default function Home() {
             </div>
             <div ref={eventsRef}>
                 <Events language={language} />
+            </div>
+            <div ref={travelRef}>
+                <Travel language={language} />
+            </div>
+            <div ref={registryRef}>
+                <Registry language={language} />
             </div>
             <div>
                 <Footer language={language} />
