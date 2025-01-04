@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Image, { StaticImageData } from 'next/image';
-import { motion } from 'framer-motion';
+import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 interface EventProps {
     img: StaticImageData;
@@ -10,9 +10,11 @@ interface EventProps {
     description: string;
     time: string;
     location: string;
+    dressCode: string;
+    rsvpForm: string;
 }
 
-const Event: React.FC<EventProps> = ({ img, title, description, time, location }) => {
+const Event: React.FC<EventProps> = ({ img, title, description, time, location, dressCode, rsvpForm }) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -33,9 +35,20 @@ const Event: React.FC<EventProps> = ({ img, title, description, time, location }
                 <p className="text-lg text-gray-600 mb-2">
                     <strong>Time:</strong> {time}
                 </p>
-                <p className="text-lg text-gray-600">
+                <p className="text-lg text-gray-600 mb-2">
                     <strong>Location:</strong> {location}
                 </p>
+                <p className="text-lg text-gray-600 mb-2">
+                    <strong>Dress Code:</strong> {dressCode}
+                </p>
+                <a
+                    href={rsvpForm}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg text-blue-600 underline hover:text-blue-800"
+                >
+                    RSVP Here
+                </a>
             </div>
         </motion.div>
     );
