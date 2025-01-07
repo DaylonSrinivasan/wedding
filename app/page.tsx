@@ -8,6 +8,7 @@ import Events from "./Components/Events/Events";
 import Footer from "./Components/Footer/Footer";
 import Travel from "./Components/Travel/Travel";
 import Registry from "./Components/Registry/Registry";
+import Gallery from "./Components/Gallery/Gallery";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
     const eventsRef = useRef<HTMLDivElement | null>(null);
     const travelRef = useRef<HTMLDivElement | null>(null);
     const registryRef = useRef<HTMLDivElement | null>(null);
+    const galleryRef = useRef<HTMLDivElement | null>(null);
 
 
 
@@ -93,6 +95,12 @@ export default function Home() {
                 >
                     Registry
                 </button>
+                <button
+                    onClick={() => scrollToSection(galleryRef)}
+                    className="flex-1 text-center py-2 px-4 bg-orange-400 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-300"
+                >
+                    Gallery
+                </button>
             </motion.nav>
 
             <div ref={languageRef}>
@@ -109,6 +117,9 @@ export default function Home() {
             </div>
             <div ref={registryRef}>
                 <Registry language={language} />
+            </div>
+            <div ref={galleryRef}>
+                <Gallery language={language} />
             </div>
             <div>
                 <Footer language={language} />
