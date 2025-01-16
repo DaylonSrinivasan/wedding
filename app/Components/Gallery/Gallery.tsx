@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { useCallback, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import Section from "../Section/Section";
