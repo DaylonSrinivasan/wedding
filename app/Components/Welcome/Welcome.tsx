@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from 'next/image';
-import EngagementPhoto from '../../../public/engagement-shot.jpg';
+import EngagementPhoto from '../../../public/images/engagement-shot.jpg';
 import { Language, STRINGS} from '../../../public/strings';
 import { motion } from 'framer-motion';
 import SectionHeader from '../SectionHeader/SectionHeader';
