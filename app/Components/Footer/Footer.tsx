@@ -1,30 +1,15 @@
 "use client";
 
+import { Language, STRINGS} from '../../../public/strings';
 import React, { useState } from "react";
 
 interface FooterProps {
-    language: 'en' | 'jp';
+    language: Language;
 }
 
 const Footer: React.FC<FooterProps> = ({ language }) => {
     const [isVisible, setIsVisible] = useState(true);
 
-    const textContent = {
-        en: {
-            madeWith: "Made with",
-            heart: "<3",
-            seeCode: "See the code on",
-            github: "GitHub",
-        },
-        jp: {
-            madeWith: "作成者",
-            heart: "❤",
-            seeCode: "コードをこちらで確認",
-            github: "GitHub",
-        },
-    };
-
-    const currentText = textContent[language] || textContent['en'];
 
     return (
         <main className="relative w-full">
@@ -37,15 +22,15 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
                     className="text-sm font-sans text-white"
                     style={{ fontFamily: "Inter, sans-serif" }}
                 >
-                    {currentText.madeWith} <span className="text-red-500">{currentText.heart}</span>.{" "}
-                    {currentText.seeCode}{" "}
+                    {STRINGS.MADE_WITH[language]} <span className="text-red-500">❤</span>.{" "}
+                    {STRINGS.SEE_CODE_ON[language]}{" "}
                     <a
                         href="https://github.com/daylonsrinivasan/wedding"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-400 underline hover:text-blue-300"
                     >
-                        {currentText.github}
+                        Github
                     </a>
                     !
                 </p>

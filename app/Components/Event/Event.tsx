@@ -3,8 +3,11 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
+import { Language, STRINGS} from '../../../public/strings';
+
 
 interface EventProps {
+    language: Language;
     img: StaticImageData;
     title: string;
     description: string;
@@ -14,7 +17,7 @@ interface EventProps {
     rsvpForm: string;
 }
 
-const Event: React.FC<EventProps> = ({ img, title, description, time, location, dressCode, rsvpForm }) => {
+const Event: React.FC<EventProps> = ({ language, img, title, description, time, location, dressCode, rsvpForm }) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -33,13 +36,13 @@ const Event: React.FC<EventProps> = ({ img, title, description, time, location, 
                 <h2 className="text-3xl font-semibold text-gray-900 mb-2">{title}</h2>
                 <p className="text-xl text-gray-700 mb-4">{description}</p>
                 <p className="text-lg text-gray-600 mb-2">
-                    <strong>Time:</strong> {time}
+                    <strong>{STRINGS.TIME[language]}:</strong> {time}
                 </p>
                 <p className="text-lg text-gray-600 mb-2">
-                    <strong>Location:</strong> {location}
+                    <strong>{STRINGS.LOCATION[language]}:</strong> {location}
                 </p>
                 <p className="text-lg text-gray-600 mb-2">
-                    <strong>Dress Code:</strong> {dressCode}
+                    <strong>{STRINGS.DRESS_CODE[language]}:</strong> {dressCode}
                 </p>
                 <a
                     href={rsvpForm}
@@ -47,7 +50,7 @@ const Event: React.FC<EventProps> = ({ img, title, description, time, location, 
                     rel="noopener noreferrer"
                     className="text-lg text-blue-600 underline hover:text-blue-800"
                 >
-                    RSVP Here
+                    {STRINGS.RSVP_HERE[language]}
                 </a>
             </div>
         </motion.div>

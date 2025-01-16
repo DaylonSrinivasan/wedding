@@ -6,22 +6,15 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 import Section from "../Section/Section";
 import Image from 'next/image';
 import EngagementPhoto from '../../../public/engagement-shot.jpg';
+import { Language, STRINGS} from '../../../public/strings';
+
 
 interface GalleryProps {
-    language: 'en' | 'jp';
+    language: Language;
 }
 
 const Gallery: React.FC<GalleryProps> = ({ language }) => {
-    const textContent = {
-        en: {
-            header: "Gallery",
-        },
-        jp: {
-            header: "ギャラリー",
-        },
-    };
 
-    const { header } = textContent[language];
     const controls = useAnimation(); // Framer Motion animation controls
 
     const images = [EngagementPhoto, EngagementPhoto, EngagementPhoto, EngagementPhoto];
@@ -74,7 +67,7 @@ const Gallery: React.FC<GalleryProps> = ({ language }) => {
 
     return (
         <Section>
-            <SectionHeader text={header} />
+            <SectionHeader text={STRINGS.GALLERY[language]} />
             <div
                 className="overflow-hidden w-full mt-6 relative"
                 onMouseEnter={handleMouseEnter}
