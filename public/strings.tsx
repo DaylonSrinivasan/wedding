@@ -14,19 +14,23 @@ export const STRINGS = {
         JAPANESE: "リカとデイロン",
     },
     WELCOME: {
-        ENGLISH: "Welcome",
+        ENGLISH: "We're getting married!!",
         JAPANESE: "ようこそ",
     },
     WELCOME_MESSAGE: {
         ENGLISH: [
-            "Welcome to our wedding website! We are absolutely thrilled to have you here to celebrate with us!",
-            "Get ready for a day full of love, laughter, happy tears, and maybe a few surprises along the way.",
-            "Got questions? Daylon and Rika are just a message away!"
+            "Welcome to our wedding extravaganza!!",
+            "We're so excited to tie that knot that we're getting married TWICE: in California and in Tokyo! (See Event details below).",
+            "We'd love to have your company at whichever location is most convenient for you; or come to both and enjoy twice the merriment!",
+            "Get ready to eat, drink, laugh, and dance the night away ♪₍₍٩( ᐛ )۶₎₎♪",
+            "Feel free to reach out to Rika or Daylon with any questions! You know how to contact us :)"
         ],
         JAPANESE: [
-            "私たちの結婚式のウェブサイトへようこそ！一緒にお祝いできることをとても嬉しく思っています！",
-            "愛と笑い、幸せな涙、そしていくつかのサプライズに満ちた一日をお楽しみください。",
-            "質問がありますか？デイロンとリカにお気軽にメッセージを送ってください！"
+            "私たちの結婚式エクストラバガンザへようこそ!!",
+            "私たちはとても楽しみです！なんとカリフォルニアと東京の2か所で結婚式を挙げます！（イベントの詳細は以下をご覧ください）",
+            "ご都合の良い場所でぜひご参加ください。または、両方の式に参加して2倍の楽しさを味わってください！",
+            "食べて、飲んで、笑って、そして夜通し踊る準備をしてください ♪₍₍٩( ᐛ )۶₎₎♪",
+            "質問があれば、いつでもRikaまたはDaylonに連絡してください！連絡先はご存知ですよね :)"
         ],
     },
     EVENTS: {
@@ -49,11 +53,11 @@ export const STRINGS = {
         ENGLISH: "RSVP Here",
         JAPANESE: "こちらから返信",
     },
-    US_WEDDING: {
+    CALIFORNIA_WEDDING: {
         TITLE: {
-            ENGLISH: "US Wedding",
-            JAPANESE: "アメリカの結婚式",
-        },
+            ENGLISH: "California Wedding",
+            JAPANESE: "カリフォルニアの結婚式",
+        },        
         DESCRIPTION: {
             ENGLISH: "Ceremony, cocktail hour, festivities and dancing! Dinner and drinks will be provided.",
             JAPANESE: "式典、カクテルタイム、楽しいひとときとダンス！ディナーと飲み物が提供されます。",
@@ -75,15 +79,15 @@ export const STRINGS = {
             JAPANESE: "https://docs.google.com/forms/d/e/1FAIpQLSe0RH6C8ISg1NsCzubs2L48sMtQQdKY7QPKUiAgMB1OYDiNqg/viewform?usp=sharing",
         },
     },
-    US_DINNER: {
+    CALIFORNIA_DINNER: {
         TITLE: {
-            ENGLISH: "US Dinner Party",
-            JAPANESE: "アメリカのディナーパーティー",
+            ENGLISH: "California Dinner / Bar Hangout",
+            JAPANESE: "カリフォルニアディナー / バーハングアウト",
         },
         DESCRIPTION: {
-            ENGLISH: "Help us post-game this wedding :) Daylon's gonna reserve a private dining area in a nice restaurant; come party with us after the wedding!",
-            JAPANESE: "結婚式の後、一緒に食事をしませんか？デイロンが素敵なレストランのプライベートダイニングエリアを予約します！",
-        },
+            ENGLISH: "Help us post-game our California Wedding :D Daylon's going to reserve somewhere cool to hangout - full details TBD!",
+            JAPANESE: "カリフォルニアでの結婚式の後、一緒に楽しみましょう :D デイロンが素敵な場所を予約する予定です。詳細は追ってお知らせします！",
+        },        
         TIME: {
             ENGLISH: "7:00 PM, August 16, 2025",
             JAPANESE: "2025年8月16日 19:00〜",
@@ -111,8 +115,8 @@ export const STRINGS = {
             JAPANESE: "私たちの日本での結婚式！",
         },
         TIME: {
-            ENGLISH: "September 20, 2025",
-            JAPANESE: "2025年9月20日",
+            ENGLISH: "3:10PM, September 20, 2025",
+            JAPANESE: "2025年9月20日 15:10〜",
         },
         LOCATION: {
             ENGLISH: "Tokyo, Japan",
@@ -125,6 +129,32 @@ export const STRINGS = {
         RSVP_FORM: {
             ENGLISH: "https://docs.google.com/forms/d/e/1FAIpQLSfuZ5C76VrQaDunwKtq5BeuBZ3LboV9JkhpvWcaYKddiPe1QA/viewform?usp=sharing",
             JAPANESE: "https://docs.google.com/forms/d/e/1FAIpQLSfuZ5C76VrQaDunwKtq5BeuBZ3LboV9JkhpvWcaYKddiPe1QA/viewform?usp=sharing",
+        },
+    },
+    JAPAN_DINNER: {
+        TITLE: {
+            ENGLISH: "Japan Dinner / Hangout",
+            JAPANESE: "日本ディナー / ハングアウト",
+        },
+        DESCRIPTION: {
+            ENGLISH: "Help us post-game our Japan Wedding :D Rika's going to reserve somewhere cool to hangout - full details TBD!",
+            JAPANESE: "日本での結婚式の後、一緒に楽しみましょう :D リカが素敵な場所を予約する予定です。詳細は追ってお知らせします！",
+        },
+        TIME: {
+            ENGLISH: "7:00 PM, September 20, 2025",
+            JAPANESE: "2025年9月20日 午後7時",
+        },
+        LOCATION: {
+            ENGLISH: "TBD",
+            JAPANESE: "未定",
+        },
+        DRESS_CODE: {
+            ENGLISH: "Be you :)",
+            JAPANESE: "お好きな服装でお越しください。",
+        },
+        RSVP_FORM: {
+            ENGLISH: "TODO",
+            JAPANESE: "TODO",
         },
     },
     TRAVEL: {
