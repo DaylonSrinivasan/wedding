@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React from "react";
 import styles from "./Envelope.module.css";
 import Section from "../Section/Section";
 
@@ -12,7 +11,7 @@ const Envelope = ({ handleClick }: { handleClick: () => void }) => {
             <div className={`${styles.lid} ${styles.two}`}></div>
             <div className={styles.envelope}></div>
             <div className={styles.letter}>
-              <p>You're invited!</p>
+              <p>You&apos;re invited!</p>
             </div>
           </>
       </div>
