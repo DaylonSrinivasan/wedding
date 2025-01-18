@@ -17,8 +17,8 @@ export default function Home() {
     const [language, setLanguage] = useState<Language>(Language.ENGLISH);
     const [showButtons, setShowButtons] = useState(false);
     const [showHomepage, setShowHomepage] = useState(false);
-    const [isEnvelopeClicked, setIsEnvelopeClicked] = useState(false);
-
+    const [showEnvelope, setShowEnvelope] = useState(true);
+    const envelopeFadeDelay = 0.5;
     const envelopeFadeDuration = 1;
     const handleLanguageChange = (newLanguage: Language) => {
         setLanguage(newLanguage);
@@ -61,11 +61,12 @@ export default function Home() {
     }, []);
 
     const handleEnvelopeClick = () => {
-        setIsEnvelopeClicked(true);
-
+        setTimeout(() => {
+            setShowEnvelope(false);
+        }, envelopeFadeDelay * 1000);
         setTimeout(() => {
             setShowHomepage(true);
-        }, envelopeFadeDuration * 1000);
+        }, envelopeFadeDelay * 1000 + envelopeFadeDuration * 1000);
     };
 
     return (
@@ -73,7 +74,7 @@ export default function Home() {
             {!showHomepage ? (
                 <motion.div
                     initial={{ opacity: 1 }}
-                    animate={{ opacity: isEnvelopeClicked ? 0 : 1 }} // Fade to opacity 0 when clicked
+                    animate={{ opacity: showEnvelope ? 1 : 0 }}
                     transition={{ duration: envelopeFadeDuration }}
                 >
                     <Envelope handleClick={handleEnvelopeClick} />
