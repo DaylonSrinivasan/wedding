@@ -16,10 +16,9 @@ const LanguageSelect: React.FC<LanguageSelectProps> = ({ language, onLanguageCha
 
     return (
         <Section>
-            {/* Animated Text */}
             <motion.h1
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
                 className="text-5xl font-serif font-bold text-black drop-shadow-lg mb-6"
             >
