@@ -14,8 +14,12 @@ export const STRINGS = {
         JAPANESE: "リカとデイロン",
     },
     WELCOME: {
-        ENGLISH: "We're getting married!!",
+        ENGLISH: "Welcome",
         JAPANESE: "ようこそ",
+    },
+    WERE_GETTING_MARRIED: {
+        ENGLISH: "We're getting married!!",
+        JAPANESE: "結婚します！！"
     },
     WELCOME_MESSAGE: {
         ENGLISH: [

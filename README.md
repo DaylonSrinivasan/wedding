@@ -23,3 +23,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Scroll animations: https://tutorials.emersonvisuals.com/tutorialseventeen
 
 Envelope: https://codepen.io/Coding-Star/pen/WNpbvwB
+
+NavBar: https://github.com/vlahou89/nextjs-tailwindcss-navbar/tree/main

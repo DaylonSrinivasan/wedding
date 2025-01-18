@@ -16,7 +16,7 @@ interface WelcomeProps {
 const Welcome: React.FC<WelcomeProps> = ({ language }) => {
     return (
         <Section>
-            <SectionHeader text={STRINGS.WELCOME[language]} />
+            <SectionHeader text={STRINGS.WERE_GETTING_MARRIED[language]} />
 
             <div className="flex flex-col md:flex-row items-center justify-between mt-6"> 
                 <motion.div

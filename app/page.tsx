@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import LanguageSelect from "./Components/LanguageSelect/LanguageSelect";
 import Welcome from "./Components/Welcome/Welcome";
 import Events from "./Components/Events/Events";
@@ -9,13 +9,15 @@ import Footer from "./Components/Footer/Footer";
 import Travel from "./Components/Travel/Travel";
 import Registry from "./Components/Registry/Registry";
 import Gallery from "./Components/Gallery/Gallery";
+import NavBar from "./Components/NavBar/NavBar";
+
 import Envelope from "./Components/Envelope/Envelope";
 
 import { Language, STRINGS } from "../public/strings";
 
 export default function Home() {
     const [language, setLanguage] = useState<Language>(Language.ENGLISH);
-    const [showButtons, setShowButtons] = useState(false);
+    const [showNavBar, setShowNavBar] = useState(false);
     const [showHomepage, setShowHomepage] = useState(false);
     const [showEnvelope, setShowEnvelope] = useState(true);
     const envelopeFadeDelay = 0.5;
@@ -30,6 +32,14 @@ export default function Home() {
     const travelRef = useRef<HTMLDivElement | null>(null);
     const registryRef = useRef<HTMLDivElement | null>(null);
     const galleryRef = useRef<HTMLDivElement | null>(null);
+    const navLinks = [
+        { ref: languageSelectRef, title: STRINGS.LANGUAGE[language] },
+        { ref: welcomeRef, title: STRINGS.WELCOME[language] },
+        { ref: eventsRef, title: STRINGS.EVENTS[language] },
+        { ref: travelRef, title: STRINGS.TRAVEL[language] },
+        { ref: registryRef, title: STRINGS.REGISTRY[language] },
+        { ref: galleryRef, title: STRINGS.GALLERY[language] }
+    ];
 
     const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -43,9 +53,9 @@ export default function Home() {
             if (timeoutId) {
                 clearTimeout(timeoutId);
             }
-            setShowButtons(true); // Show buttons when user starts scrolling
+            setShowNavBar(true); // Show buttons when user starts scrolling
             timeoutId = setTimeout(() => {
-                setShowButtons(false);
+                setShowNavBar(false);
             }, 2000); // Hide after 2 seconds of inactivity
         };
 
@@ -85,50 +95,32 @@ export default function Home() {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
                 >
-                    <motion.nav
-                        className="fixed top-0 left-0 w-full flex justify-evenly items-center z-50"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: showButtons ? 1 : 0 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        <button
-                            onClick={() => scrollToSection(languageSelectRef)}
-                            className="flex-1 text-center py-2 px-4 bg-orange-400 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-300"
+                    <AnimatePresence>
+                        {/* NavBar is always shown on small screens (below md) */}
+                        <motion.div
+                            key="mobile-nav"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="md:hidden"
                         >
-                            {STRINGS.LANGUAGE[language]}
-                        </button>
-                        <button
-                            onClick={() => scrollToSection(welcomeRef)}
-                            className="flex-1 text-center py-2 px-4 bg-orange-400 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-300"
-                        >
-                            {STRINGS.WELCOME[language]}
-                        </button>
-                        <button
-                            onClick={() => scrollToSection(eventsRef)}
-                            className="flex-1 text-center py-2 px-4 bg-orange-400 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-300"
-                        >
-                            {STRINGS.EVENTS[language]}
-                        </button>
-                        <button
-                            onClick={() => scrollToSection(travelRef)}
-                            className="flex-1 text-center py-2 px-4 bg-orange-400 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-300"
-                        >
-                            {STRINGS.TRAVEL[language]}
-                        </button>
-                        <button
-                            onClick={() => scrollToSection(registryRef)}
-                            className="flex-1 text-center py-2 px-4 bg-orange-400 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-300"
-                        >
-                            {STRINGS.REGISTRY[language]}
-                        </button>
-                        <button
-                            onClick={() => scrollToSection(galleryRef)}
-                            className="flex-1 text-center py-2 px-4 bg-orange-400 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-300"
-                        >
-                            {STRINGS.GALLERY[language]}
-                        </button>
-                    </motion.nav>
+                            <NavBar links={navLinks} onClick={scrollToSection}/>
+                        </motion.div>
 
+                        {/* NavBar appears on larger screens based on scroll */}
+                        <motion.div
+                            key="desktop-nav"
+                            className="hidden md:block"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: showNavBar ? 1 : 0 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            <NavBar links={navLinks} onClick={scrollToSection}/>
+                        </motion.div>
+
+                    </AnimatePresence>
                     <div ref={languageSelectRef}>
                         <LanguageSelect language={language} onLanguageChange={handleLanguageChange} />
                     </div>
