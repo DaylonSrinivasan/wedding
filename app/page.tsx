@@ -15,7 +15,7 @@ import { Language, STRINGS } from "../public/strings";
 
 export default function Home() {
     const [language, setLanguage] = useState<Language>(Language.ENGLISH);
-    const [showButtons, setShowButtons] = useState(true);
+    const [showButtons, setShowButtons] = useState(false);
     const [showHomepage, setShowHomepage] = useState(false);
     const [isEnvelopeClicked, setIsEnvelopeClicked] = useState(false);
 
