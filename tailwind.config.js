@@ -4,8 +4,13 @@ module.exports = {
     './app/**/*.tsx',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        elegant: ['Dancing Script', 'serif'],
+        title: ['Merriweather', 'serif'],
+      },
+    },
   },
-  plugins: [],
+  plugins: []
 }
 

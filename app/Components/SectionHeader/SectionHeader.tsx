@@ -16,7 +16,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ text }) => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
-                className="text-3xl font-serif font-bold text-black drop-shadow-lg mb-4"
+                className="text-3xl font-title font-bold text-black drop-shadow-lg mb-4"
             >
                 {text}
             </motion.h1>

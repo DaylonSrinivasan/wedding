@@ -1,5 +1,7 @@
 "use client";
 
+import { Merriweather, Dancing_Script } from 'next/font/google';
+
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LanguageSelect from "./Components/LanguageSelect/LanguageSelect";
@@ -14,6 +16,11 @@ import NavBar from "./Components/NavBar/NavBar";
 import Envelope from "./Components/Envelope/Envelope";
 
 import { Language, STRINGS } from "../public/strings";
+
+const merriweather = Merriweather({ subsets: ['latin'] , weight:"400"});
+
+const dancingScripts = Dancing_Script({ subsets: ['latin'] });
+
 
 export default function Home() {
     const [language, setLanguage] = useState<Language>(Language.ENGLISH);
@@ -80,7 +87,7 @@ export default function Home() {
     };
 
     return (
-        <div className="relative">
+        <div className={`relative ${merriweather.className} ${dancingScripts.className}`}>
             {!showHomepage ? (
                 <motion.div
                     initial={{ opacity: 1 }}

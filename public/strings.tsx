@@ -200,8 +200,8 @@ export const STRINGS = {
         JAPANESE: "ギャラリー",
     },
     MADE_WITH: {
-        ENGLISH: "Made with ❤",
-        JAPANESE: "作成者 ❤",
+        ENGLISH: "Made with",
+        JAPANESE: "作成者",
     },
 
     SEE_CODE_ON: {

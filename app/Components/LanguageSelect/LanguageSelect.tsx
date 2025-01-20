@@ -20,7 +20,7 @@ const LanguageSelect: React.FC<LanguageSelectProps> = ({ language, onLanguageCha
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
-                className="text-5xl font-serif font-bold text-black drop-shadow-lg mb-6"
+                className="text-5xl font-elegant font-bold text-black drop-shadow-lg mb-6"
             >
                 {STRINGS.RIKA_AND_DAYLON[language]}
             </motion.h1>
@@ -34,7 +34,7 @@ const LanguageSelect: React.FC<LanguageSelectProps> = ({ language, onLanguageCha
             >
                 <button
                     onClick={() => onLanguageChange(Language.ENGLISH)}
-                    className={`px-4 py-2 rounded-lg text-lg font-medium ${
+                    className={`px-4 py-2 rounded-lg text-lg font-medium font-text font-title ${
                         language === Language.ENGLISH
                             ? 'bg-orange-600 text-white shadow-md'
                             : 'bg-orange-200 text-orange-800 hover:bg-orange-300'
@@ -44,7 +44,7 @@ const LanguageSelect: React.FC<LanguageSelectProps> = ({ language, onLanguageCha
                 </button>
                 <button
                     onClick={() => onLanguageChange(Language.JAPANESE)}
-                    className={`px-4 py-2 rounded-lg text-lg font-medium ${
+                    className={`px-4 py-2 rounded-lg text-lg font-medium font-text font-title ${
                         language ===  Language.JAPANESE
                             ? 'bg-orange-600 text-white shadow-md'
                             : 'bg-orange-200 text-orange-800 hover:bg-orange-300'
