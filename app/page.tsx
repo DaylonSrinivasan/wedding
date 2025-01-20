@@ -84,11 +84,24 @@ export default function Home() {
             {!showHomepage ? (
                 <motion.div
                     initial={{ opacity: 1 }}
-                    animate={{ opacity: showEnvelope ? 1 : 0 }}
-                    transition={{ duration: envelopeFadeDuration }}
+                    animate={{
+                        opacity: showEnvelope ? 1 : 0,
+                        y: [0, -10, 0],
+                        transition: {
+                            opacity: { duration: envelopeFadeDuration },
+                            y: {
+                                duration: 1,
+                                repeat: Infinity,
+                                repeatType: "reverse",
+                                ease: "easeInOut"
+                            }
+                        }
+                    }}
                 >
                     <Envelope handleClick={handleEnvelopeClick} />
                 </motion.div>
+
+
             ) : (
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -105,7 +118,7 @@ export default function Home() {
                             transition={{ duration: 0.5 }}
                             className="md:hidden"
                         >
-                            <NavBar links={navLinks} onClick={scrollToSection}/>
+                            <NavBar links={navLinks} onClick={scrollToSection} />
                         </motion.div>
 
                         {/* NavBar appears on larger screens based on scroll */}
@@ -117,7 +130,7 @@ export default function Home() {
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <NavBar links={navLinks} onClick={scrollToSection}/>
+                            <NavBar links={navLinks} onClick={scrollToSection} />
                         </motion.div>
 
                     </AnimatePresence>
