@@ -25,3 +25,5 @@ Scroll animations: https://tutorials.emersonvisuals.com/tutorialseventeen
 Envelope: https://codepen.io/Coding-Star/pen/WNpbvwB
 
 NavBar: https://github.com/vlahou89/nextjs-tailwindcss-navbar/tree/main
+
+Image Reducer: https://www.reduceimages.com/ (resized images to 1920 width)
