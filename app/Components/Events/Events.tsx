@@ -13,7 +13,7 @@ interface EventsProps {
 const Events: React.FC<EventsProps> = ({ language }) => {
 
     return (
-        <Section>
+        <Section background="/images/plain-background-2.jpg">
             <SectionHeader text={STRINGS.EVENTS[language]} />
             <div className="flex w-full overflow-x-auto space-x-6 scrollbar-hide">
                 <motion.div

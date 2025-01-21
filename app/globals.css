@@ -25,13 +25,4 @@ body {
   background-image: url('/images/background.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-}
-
-/* Adjust the background for smaller screens */
-@media (max-width: 768px) {
-  body {
-    background-size: auto 130%;
-    background-position: center center;
-  }
 }

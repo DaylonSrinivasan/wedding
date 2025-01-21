@@ -13,7 +13,7 @@ interface RegistryProps {
 
 const Registry: React.FC<RegistryProps> = ({ language }) => {
     return (
-        <Section>
+        <Section background="/images/plain-background-4.jpg">
             <SectionHeader text={STRINGS.REGISTRY[language]} />
 
             <div className="flex flex-col items-center justify-center mt-6">

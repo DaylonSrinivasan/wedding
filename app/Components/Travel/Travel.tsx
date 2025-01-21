@@ -12,7 +12,7 @@ interface TravelProps {
 
 const Travel: React.FC<TravelProps> = ({ language }) => {
     return (
-        <Section>
+        <Section background="/images/plain-background-3.jpg">
             <SectionHeader text={STRINGS.TRAVEL[language]} />
 
             <div className="flex flex-col items-center justify-center mt-6">

@@ -137,7 +137,7 @@ const Gallery: React.FC<GalleryProps> = ({ language }) => {
     }, [startAnimation]);
 
     return (
-        <Section>
+        <Section background="/images/plain-background-5.jpg">
             <SectionHeader text={STRINGS.GALLERY[language]} />
             <div className="overflow-hidden w-full mt-6 relative">
                 <motion.div

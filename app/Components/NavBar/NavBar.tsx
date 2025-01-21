@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
+
 interface NavBarProps {
     links: { ref: React.RefObject<HTMLDivElement | null>; title: string }[];
     onClick: (ref: React.RefObject<HTMLDivElement | null>) => void;
@@ -10,6 +11,7 @@ interface NavBarProps {
 function NavBar({ links, onClick }: NavBarProps) {
     const [navbar, setNavbar] = useState(false);
     return (
+
         <div className="font-title">
             <nav className="w-full bg-orange-300 fixed top-0 left-0 right-0 z-10">
                 <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
