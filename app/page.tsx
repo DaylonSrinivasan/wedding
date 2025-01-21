@@ -116,22 +116,24 @@ export default function Home() {
                     transition={{ duration: 1 }}
                 >
                     <AnimatePresence>
+                                                {/* NavBar is always shown on small screens (below md) */}
+
                         <motion.div
-                            key="desktop-nav"
-                            className="hidden md:block fixed top-0 left-0 w-full z-50"
+                            key="mobile-nav"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.5 }}
+                            className="md:hidden"
                         >
                             <NavBar links={navLinks} onClick={scrollToSection} />
                         </motion.div>
 
                         <motion.div
-                            key="mobile-nav"
-                            className="md:hidden fixed top-0 left-0 w-full z-50"
+                            key="desktop-nav"
+                            className="hidden md:block"
                             initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
+                            animate={{ opacity: showNavBar ? 1 : 0  }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.5 }}
                         >
