@@ -27,14 +27,12 @@ export const STRINGS = {
             "We're so excited to tie that knot that we're getting married TWICE: in California and in Tokyo! (See Event details below).",
             "We'd love to have your company at whichever location is most convenient for you; or come to both and enjoy twice the merriment!",
             "Get ready to eat, drink, laugh, and dance the night away ♪₍₍٩( ᐛ )۶₎₎♪",
-            "Feel free to reach out to Rika or Daylon with any questions! You know how to contact us :)"
         ],
         JAPANESE: [
             "私たちの結婚式エクストラバガンザへようこそ!!",
             "私たちはとても楽しみです！なんとカリフォルニアと東京の2か所で結婚式を挙げます！（イベントの詳細は以下をご覧ください）",
             "ご都合の良い場所でぜひご参加ください。または、両方の式に参加して2倍の楽しさを味わってください！",
             "食べて、飲んで、笑って、そして夜通し踊る準備をしてください ♪₍₍٩( ᐛ )۶₎₎♪",
-            "質問があれば、いつでもRikaまたはDaylonに連絡してください！連絡先はご存知ですよね :)"
         ],
     },
     EVENTS: {
