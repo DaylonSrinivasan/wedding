@@ -54,7 +54,7 @@ export const STRINGS = {
     },
     CALIFORNIA_WEDDING: {
         TITLE: {
-            ENGLISH: "California Wedding",
+            ENGLISH: "California Ceremony",
             JAPANESE: "カリフォルニアの結婚式",
         },
         DESCRIPTION: {
@@ -72,10 +72,6 @@ export const STRINGS = {
         DRESS_CODE: {
             ENGLISH: "Cocktail attire: cocktail dresses, suits + slacks, something comfortable!",
             JAPANESE: "カクテルドレス、スーツ、または快適な服装でお越しください。",
-        },
-        RSVP_FORM: {
-            ENGLISH: "https://docs.google.com/forms/d/e/1FAIpQLSe0RH6C8ISg1NsCzubs2L48sMtQQdKY7QPKUiAgMB1OYDiNqg/viewform?usp=sharing",
-            JAPANESE: "https://docs.google.com/forms/d/e/1FAIpQLSe0RH6C8ISg1NsCzubs2L48sMtQQdKY7QPKUiAgMB1OYDiNqg/viewform?usp=sharing",
         },
     },
     CALIFORNIA_DINNER: {

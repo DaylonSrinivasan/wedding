@@ -14,10 +14,9 @@ interface EventProps {
     time: string;
     location: string;
     dressCode: string;
-    rsvpForm: string;
 }
 
-const Event: React.FC<EventProps> = ({ language, img, title, description, time, location, dressCode, rsvpForm }) => {
+const Event: React.FC<EventProps> = ({ language, img, title, description, time, location, dressCode }) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -44,14 +43,6 @@ const Event: React.FC<EventProps> = ({ language, img, title, description, time, 
                 <p className="text-lg text-gray-600 mb-2">
                     <strong>{STRINGS.DRESS_CODE[language]}:</strong> {dressCode}
                 </p>
-                <a
-                    href={rsvpForm}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-lg text-blue-600 underline hover:text-blue-800"
-                >
-                    {STRINGS.RSVP_HERE[language]}
-                </a>
             </div>
         </motion.div>
     );
