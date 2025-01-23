@@ -23,12 +23,12 @@ export const STRINGS = {
     },
     WELCOME_MESSAGE: {
         ENGLISH: [
-            "Rika and I are SO excited to celebrate tying the knot with you!",
+            "Rika and I are SO excited to celebrate our special day with you!",
             "Join us for our ceremonies in California or Tokyo—whichever works best for you!",
             "Get ready to eat, drink, laugh, and dance the night away! ♪₍₍٩( ᐛ )۶₎₎♪",
         ],
         JAPANESE: [
-            "りかと私は、皆さんと一緒に結婚をお祝いできることにとてもワクワクしています！",
+            "りかと私は、皆さんと一緒に結婚をお祝いできることにとてもワクワクしています！ TODO",
             "カリフォルニアまたは東京でのセレモニーにぜひご参加ください。ご都合の良い方を選んでくださいね！",
             "食べて、飲んで、笑って、夜を踊りながら楽しんでくださいね！ ♪₍₍٩( ᐛ )۶₎₎♪",]
     },
@@ -152,40 +152,110 @@ export const STRINGS = {
             JAPANESE: "TODO",
         },
     },
-    TRAVEL: {
-        ENGLISH: "Travel",
-        JAPANESE: "交通案内",
+    FAQ: {
+        ENGLISH: "FAQ",
+        JAPANESE: "よくある質問",
     },
-    TRAVEL_INFO: {
-        ENGLISH: [
-            "No hotel block for our wedding, but we'll add some recommended hotels in the future!",
-            "We recommend carpooling or using Uber to get to the venue. There's plenty of parking available!"
-        ],
-        JAPANESE: [
-            "私たちの結婚式のためのホテルブロックはありませんが、後日おすすめのホテルを追加する予定です！",
-            "会場には車でお越しいただくか、Uberをご利用いただくことをお勧めします。駐車場は十分にあります！"
-        ],
+    FREQUENTLY_ASKED_QUESTIONS_TITLE: {
+        ENGLISH: "Frequently Asked Questions",
+        JAPANESE: "よくある質問",
     },
-    REGISTRY: {
-        ENGLISH: "Registry",
-        JAPANESE: "レジストリ",
-    },
-    REGISTRY_INFO: {
-        ENGLISH: [
-            "No registry! Rika and Daylon are both minimalists - your company is more than enough, I promise!",
-            "Really really!",
-            "...",
-            "Still here? If you want to send some cash, we'll have a gift jar at the venue :).",
-            "Or you can just send some Bitcoin that works too."
-        ],
-        JAPANESE: [
-            "レジストリーはありません！リカとデイロンは二人ともミニマリストです。皆さんが来てくださるだけで十分です、本当に！",
-            "本当に本当に！",
-            "...",
-            "まだ見てますか？もし現金を贈りたい場合、会場にギフトジャーを用意しておきます :)",
-            "それか、Bitcoin を送っていただいても大丈夫です。"
-        ],
-    },
+    FREQUENTLY_ASKED_QUESTIONS: [
+        {
+            QUESTION: {
+                ENGLISH: "Which wedding should I come to?",
+                JAPANESE: "TODO",
+            },
+            ANSWER: {
+                ENGLISH: [
+                    "Whichever you like!",
+                    "While we expect the majority of guests to come to the California wedding because it's more convenient, both weddings are open to all guests!",
+                    "Feel free to reach out to Daylon and Rika if you need travel tips or guidelines!"
+                ],
+                JAPANESE: "TODO",
+            }
+        },
+        {
+            QUESTION: {
+                ENGLISH: "Can I bring a +1?",
+                JAPANESE: "TODO",
+            },
+            ANSWER: {
+                ENGLISH: "Yes! Everyone is welcome to bring a +1. Partner, friend, family member: anyone who'll be able to enjoy our wedding with you is welcome! ",
+                JAPANESE: "TODO",
+            }
+        },
+        {
+            QUESTION: {
+                ENGLISH: "Do you have hotel recommendations?",
+                JAPANESE: "TODO",
+            },
+            ANSWER: {
+                ENGLISH: [
+                    "Rika and I are still doing research - come check this page later for recommendations!",
+                    "If you'd be interesting in joining a hotel block, please indicate your interest in the RSVP form."
+                ],
+                JAPANESE: "TODO",
+            }
+        },
+        {
+            QUESTION: {
+                ENGLISH: "Do you have transportation recommendations?",
+                JAPANESE: "TODO",
+            },
+            ANSWER: {
+                ENGLISH: [
+                    "The California wedding venue is easily accessible by car, and there's plenty of parking! Uber and Lyft are also great options.",
+                    "For folks coming from out of town, Rika and I are brainstorming providing transportation assistance (shuttle, or organizing carpools).",
+                    "If you'd be interested, please indicate your interest in the RSVP form!"
+                ],
+                JAPANESE: "TODO",
+            }
+        },
+        {
+            QUESTION: {
+                ENGLISH: "Where's your registry?",
+                JAPANESE: "TODO",
+            },
+            ANSWER: {
+                ENGLISH: [
+                    "No registry! Your presents is the greatest presence.",
+                    "If you would like to contribute to our honeymoon fund, we'll have a gift-box at the wedding to collect any physical gifts! Or you can venmo me at (link)"
+                ],
+                JAPANESE: "TODO",
+            }
+        },
+        {
+            QUESTION: {
+                ENGLISH: "Will there be an open bar?",
+                JAPANESE: "TODO",
+            },
+            ANSWER: {
+                ENGLISH: "Yes! Both our California and Japan venues will offer complimentary open bars for our guests - please enjoy!!",
+                JAPANESE: "TODO",
+            }
+        },
+        {
+            QUESTION: {
+                ENGLISH: "You guys are so cute together!",
+                JAPANESE: "TODO",
+            },
+            ANSWER: {
+                ENGLISH: "That's not a question! But thank you, we know!!",
+                JAPANESE: "TODO",
+            }
+        },
+        {
+            QUESTION: {
+                ENGLISH: "I have more questions. How can I contact you?",
+                JAPANESE: "TODO",
+            },
+            ANSWER: {
+                ENGLISH: "Rika and I are available on Messenger, text, Instagram, or you can reach our gmail: rikadaylon@gmail.com",
+                JAPANESE: "TODO",
+            }
+        },
+    ],
     GALLERY: {
         ENGLISH: "Gallery",
         JAPANESE: "ギャラリー",

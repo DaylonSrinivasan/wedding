@@ -8,8 +8,7 @@ import LanguageSelect from "./Components/LanguageSelect/LanguageSelect";
 import Welcome from "./Components/Welcome/Welcome";
 import Events from "./Components/Events/Events";
 import Footer from "./Components/Footer/Footer";
-import Travel from "./Components/Travel/Travel";
-import Registry from "./Components/Registry/Registry";
+import Faq from "./Components/FAQ/Faq";
 import Gallery from "./Components/Gallery/Gallery";
 import NavBar from "./Components/NavBar/NavBar";
 
@@ -36,15 +35,13 @@ export default function Home() {
     const languageSelectRef = useRef<HTMLDivElement | null>(null);
     const welcomeRef = useRef<HTMLDivElement | null>(null);
     const eventsRef = useRef<HTMLDivElement | null>(null);
-    const travelRef = useRef<HTMLDivElement | null>(null);
-    const registryRef = useRef<HTMLDivElement | null>(null);
+    const faqRef = useRef<HTMLDivElement | null>(null);
     const galleryRef = useRef<HTMLDivElement | null>(null);
     const navLinks = [
         { ref: languageSelectRef, title: STRINGS.LANGUAGE[language] },
         { ref: welcomeRef, title: STRINGS.WELCOME[language] },
         { ref: eventsRef, title: STRINGS.EVENTS[language] },
-        { ref: travelRef, title: STRINGS.TRAVEL[language] },
-        { ref: registryRef, title: STRINGS.REGISTRY[language] },
+        { ref: faqRef, title: STRINGS.FAQ[language] },
         { ref: galleryRef, title: STRINGS.GALLERY[language] }
     ];
 
@@ -150,11 +147,8 @@ export default function Home() {
                     <div ref={eventsRef}>
                         <Events language={language} />
                     </div>
-                    <div ref={travelRef}>
-                        <Travel language={language} />
-                    </div>
-                    <div ref={registryRef}>
-                        <Registry language={language} />
+                    <div ref={faqRef}>
+                        <Faq language={language} />
                     </div>
                     <div ref={galleryRef}>
                         <Gallery language={language} />
