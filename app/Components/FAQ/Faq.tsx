@@ -27,7 +27,7 @@ const Faq: React.FC<FaqProps> = ({ language }) => {
     };
 
     return (
-        <Section background="/images/plain-background-3.jpg">
+        <Section background="/images/plain-background-4.jpg">
             <SectionHeader text={STRINGS.FREQUENTLY_ASKED_QUESTIONS_TITLE[language]} />
 
             <div className="flex flex-col items-center justify-center mt-6 w-full">

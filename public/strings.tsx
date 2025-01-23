@@ -1,3 +1,5 @@
+import RSVP from "@/app/Components/Rsvp/Rsvp";
+
 export enum Language {
     ENGLISH = "ENGLISH",
     JAPANESE = "JAPANESE",
@@ -47,10 +49,6 @@ export const STRINGS = {
     DRESS_CODE: {
         ENGLISH: "Dress Code",
         JAPANESE: "服装規定",
-    },
-    RSVP_HERE: {
-        ENGLISH: "RSVP Here",
-        JAPANESE: "こちらから返信",
     },
     CALIFORNIA_WEDDING: {
         TITLE: {
@@ -256,6 +254,10 @@ export const STRINGS = {
             }
         },
     ],
+    RSVP: {
+        ENGLISH: "RSVP",
+        JAPANESE: "こちらから返信",
+    },
     GALLERY: {
         ENGLISH: "Gallery",
         JAPANESE: "ギャラリー",
