@@ -34,7 +34,7 @@ const Faq: React.FC<FaqProps> = ({ language }) => {
                 <div className="text-center font-serif text-gray-800 w-full">
                     <Slider {...settings}>
                         {(STRINGS.FREQUENTLY_ASKED_QUESTIONS as QA[]).reduce<QA[][]>((acc, _, i, arr) => {
-                            if (i % 3 === 0) acc.push(arr.slice(i, i + 3));
+                            if (i % 2 === 0) acc.push(arr.slice(i, i + 2));
                             return acc;
                         }, []).map((group, index) => (
                             <div key={index} className="p-4">
