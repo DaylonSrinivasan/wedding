@@ -2,8 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Section from "../Section/Section";
-import SectionHeader from "../SectionHeader/SectionHeader";
 
 import { Language, STRINGS } from "../../../public/strings";
 
