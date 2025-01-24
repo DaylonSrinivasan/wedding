@@ -38,6 +38,7 @@ const Events: React.FC<EventsProps> = ({ language }) => {
                             description={STRINGS.CALIFORNIA_WEDDING.DESCRIPTION[language]}
                             time={STRINGS.CALIFORNIA_WEDDING.TIME[language]}
                             location={STRINGS.CALIFORNIA_WEDDING.LOCATION[language]}
+                            locationUrl={"https://maps.app.goo.gl/MoZUBYr7xk32UHA5A"}
                             dressCode={STRINGS.CALIFORNIA_WEDDING.DRESS_CODE[language]}
                         />
                     </div>

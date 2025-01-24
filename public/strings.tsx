@@ -64,17 +64,17 @@ export const STRINGS = {
             JAPANESE: "2025年8月15日 17:00〜22:00",
         },
         LOCATION: {
-            ENGLISH: "Saratoga Springs, California",
+            ENGLISH: "22801 Big Basin Wy, Saratoga, CA 95070",
             JAPANESE: "カリフォルニア州サラトガスプリングス",
         },
         DRESS_CODE: {
-            ENGLISH: "Cocktail attire: cocktail dresses, suits + slacks, something comfortable!",
+            ENGLISH: "Cocktail attire. It's an entirely outdoor venue - wear something comfortable!",
             JAPANESE: "カクテルドレス、スーツ、または快適な服装でお越しください。",
         },
     },
     CALIFORNIA_DINNER: {
         TITLE: {
-            ENGLISH: "California Dinner / Bar Hangout",
+            ENGLISH: "California Dinner Hangout",
             JAPANESE: "カリフォルニアディナー / バーハングアウト",
         },
         DESCRIPTION: {
@@ -167,7 +167,7 @@ export const STRINGS = {
             ANSWER: {
                 ENGLISH: [
                     "Whichever you like!",
-                    "While we expect the majority of guests to come to the California wedding because it's more convenient, both weddings are open to all guests!",
+                    "While we expect the majority of guests to come to the California wedding, both weddings are open to all guests!",
                     "Feel free to reach out to Daylon and Rika if you need travel tips or guidelines!"
                 ],
                 JAPANESE: "TODO",
@@ -179,7 +179,40 @@ export const STRINGS = {
                 JAPANESE: "TODO",
             },
             ANSWER: {
-                ENGLISH: "Yes! Everyone is welcome to bring a +1. Partner, friend, family member: anyone who'll be able to enjoy our wedding with you is welcome! ",
+                ENGLISH: "Yes! Everyone is welcome to bring a +1. Partner, friend, family member: anyone who'll be able to enjoy our wedding with you is welcome!",
+                JAPANESE: "TODO",
+            }
+        },
+        {
+            QUESTION: {
+                ENGLISH: "Are kids invited?",
+                JAPANESE: "TODO",
+            },
+            ANSWER: {
+                ENGLISH: "We'd love for our wedding to be your night off! Rule of thumb: older kids who do not require parental supervision are more than welcome :)",
+                JAPANESE: "TODO",
+            }
+        },
+        {
+            QUESTION: {
+                ENGLISH: "What food options will be available?",
+                JAPANESE: "TODO",
+            },
+            ANSWER: {
+                ENGLISH: [
+                    "Rika and I are still selecting our catering, but we are likely to serve buffet style with both vegetarian and non-vegetarian options!",
+                    "If you have any special dietary requests, please indicate in your RSVP form!",
+                ],
+                JAPANESE: "TODO",
+            }
+        },
+        {
+            QUESTION: {
+                ENGLISH: "Will there be an open bar?",
+                JAPANESE: "TODO",
+            },
+            ANSWER: {
+                ENGLISH: "Yes! Both our California and Japan venues will offer complimentary open bars for our guests - please enjoy!!",
                 JAPANESE: "TODO",
             }
         },
@@ -220,16 +253,6 @@ export const STRINGS = {
                     "No registry! Your presents is the greatest presence.",
                     "If you would like to contribute to our honeymoon fund, we'll have a gift-box at the wedding to collect any physical gifts! Or you can venmo me at (link)"
                 ],
-                JAPANESE: "TODO",
-            }
-        },
-        {
-            QUESTION: {
-                ENGLISH: "Will there be an open bar?",
-                JAPANESE: "TODO",
-            },
-            ANSWER: {
-                ENGLISH: "Yes! Both our California and Japan venues will offer complimentary open bars for our guests - please enjoy!!",
                 JAPANESE: "TODO",
             }
         },

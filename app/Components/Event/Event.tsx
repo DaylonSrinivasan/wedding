@@ -3,8 +3,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
-import { Language, STRINGS} from '../../../public/strings';
-
+import { Language, STRINGS } from '../../../public/strings';
 
 interface EventProps {
     language: Language;
@@ -14,9 +13,10 @@ interface EventProps {
     time: string;
     location: string;
     dressCode: string;
+    locationUrl?: string | null;
 }
 
-const Event: React.FC<EventProps> = ({ language, img, title, description, time, location, dressCode }) => {
+const Event: React.FC<EventProps> = ({ language, img, title, description, time, location, dressCode, locationUrl }) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -38,7 +38,17 @@ const Event: React.FC<EventProps> = ({ language, img, title, description, time, 
                     <strong>{STRINGS.TIME[language]}:</strong> {time}
                 </p>
                 <p className="text-lg text-gray-600 mb-2">
-                    <strong>{STRINGS.LOCATION[language]}:</strong> {location}
+                    <strong>{STRINGS.LOCATION[language]}:</strong> {location}{" "}
+                    {locationUrl && (
+                        <a
+                            href={locationUrl}
+                            className="text-blue-500 hover:underline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            (Google Maps)
+                        </a>
+                    )}
                 </p>
                 <p className="text-lg text-gray-600 mb-2">
                     <strong>{STRINGS.DRESS_CODE[language]}:</strong> {dressCode}
