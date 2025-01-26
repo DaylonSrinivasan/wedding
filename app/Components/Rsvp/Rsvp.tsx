@@ -2,6 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import SectionHeader from '../SectionHeader/SectionHeader';
+import Section from '../Section/Section';
 
 import { Language, STRINGS } from "../../../public/strings";
 
@@ -11,22 +13,17 @@ interface RSVPProps {
 
 const RSVP: React.FC<RSVPProps> = ({ language }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1.5, ease: "easeOut" }}
-      className="flex justify-center w-full"
-    >
-      {/* RSVP Button */}
-      <a
-        href="https://your-google-form-link.com" // Replace with your actual Google Form link
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-full px-12 py-6 bg-orange-600 text-white font-bold text-2xl rounded-lg shadow-md hover:bg-orange-700 transition-all text-center"
+    <Section background="/images/plain-background-6.jpg">
+      <SectionHeader text={STRINGS.RSVP[language]} />
+      {/* Embedded Google Form */}
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSe3bLzzSGp63xJAwp4r644X39W4T0xv6DN02MgxLxGyriIDFw/viewform?embedded=true"
+        width="800"
+        height="1200"
       >
-        {STRINGS.RSVP[language]}
-      </a>
-    </motion.div>
+        Loading…
+      </iframe>
+    </Section>
   );
 };
 
