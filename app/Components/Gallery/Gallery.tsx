@@ -51,6 +51,31 @@ import image43 from '../../../public/images/image43.jpg';
 import image44 from '../../../public/images/image44.jpg';
 import image45 from '../../../public/images/image45.jpg';
 import image46 from '../../../public/images/image46.jpg';
+import image47 from '../../../public/images/image47.jpg';
+import image48 from '../../../public/images/image48.jpg';
+import image49 from '../../../public/images/image49.jpg';
+import image50 from '../../../public/images/image50.jpg';
+import image51 from '../../../public/images/image51.jpg';
+import image52 from '../../../public/images/image52.jpg';
+import image53 from '../../../public/images/image53.jpg';
+import image54 from '../../../public/images/image54.jpg';
+import image55 from '../../../public/images/image55.jpg';
+import image56 from '../../../public/images/image56.jpg';
+import image57 from '../../../public/images/image57.jpg';
+import image58 from '../../../public/images/image58.jpg';
+import image59 from '../../../public/images/image59.jpg';
+import image60 from '../../../public/images/image60.jpg';
+import image61 from '../../../public/images/image61.jpg';
+import image62 from '../../../public/images/image62.jpg';
+import image63 from '../../../public/images/image63.jpg';
+import image64 from '../../../public/images/image64.jpg';
+import image65 from '../../../public/images/image65.jpg';
+import image66 from '../../../public/images/image66.jpg';
+import image67 from '../../../public/images/image67.jpg';
+import image68 from '../../../public/images/image68.jpg';
+import image69 from '../../../public/images/image69.jpg';
+import image70 from '../../../public/images/image70.jpg';
+import image71 from '../../../public/images/image71.jpg';
 
 
 import { Language, STRINGS } from '../../../public/strings';
@@ -64,55 +89,80 @@ const Gallery: React.FC<GalleryProps> = ({ language }) => {
     const controls = useAnimation(); // Framer Motion animation controls
 
     const images = [
-        image1,
-        image2,
-        image3,
-        image4,
-        image5,
-        image6,
-        image7,
-        image8,
-        image9,
-        image10,
-        image11,
-        image12,
-        image13,
-        image14,
-        image15,
-        image16,
-        image17,
-        image18,
-        image19,
-        image20,
-        image21,
-        image22,
-        image23,
-        image24,
-        image25,
-        image26,
-        image27,
-        image28,
-        image29,
-        image30,
-        image31,
-        image32,
-        image33,
-        image34,
-        image35,
-        image36,
         image37,
-        image38,
+        image12,
+        image60,
+        image24,
+        image3,
+        image50,
+        image16,
+        image5,
+        image35,
+        image64,
+        image23,
+        image49,
+        image9,
+        image71,
+        image1,
         image39,
         image40,
-        image41,
-        image42,
-        image43,
-        image44,
-        image45,
+        image68,
+        image32,
+        image13,
+        image19,
+        image54,
+        image27,
+        image48,
+        image15,
         image46,
+        image66,
+        image52,
+        image43,
+        image26,
+        image36,
+        image7,
+        image61,
+        image58,
+        image2,
+        image29,
+        image44,
+        image21,
+        image10,
+        image17,
+        image65,
+        image67,
+        image4,
+        image41,
+        image11,
+        image22,
+        image20,
+        image31,
+        image6,
+        image55,
+        image45,
+        image8,
+        image56,
+        image33,
+        image30,
+        image47,
+        image14,
+        image18,
+        image38,
+        image25,
+        image51,
+        image42,
+        image62,
+        image34,
+        image59,
+        image28,
+        image53,
+        image57,
+        image70,
+        image63,
+        image69
     ];
     
-
+    
     const duplicatedImages = [...images, ...images]; // Duplicate images for seamless looping
     const imageWidth = 300; // Fixed image width
     const imageMargin = 16 * 2; // Left and right margins (mx-4 = 16px on each side)
