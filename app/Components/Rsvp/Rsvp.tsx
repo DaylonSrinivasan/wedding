@@ -19,7 +19,7 @@ const RSVP: React.FC<RSVPProps> = ({ language }) => {
     >
       {/* RSVP Button */}
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSe3bLzzSGp63xJAwp4r644X39W4T0xv6DN02MgxLxGyriIDFw/viewform?usp=dialog" // Replace with your actual Google Form link
+        href="https://forms.fillout.com/t/qHfvfA6JXEus" // Replace with your actual Google Form link
         target="_blank"
         rel="noopener noreferrer"
         className="w-full px-12 py-6 bg-orange-600 text-white font-bold text-2xl rounded-lg shadow-md hover:bg-orange-700 transition-all text-center"

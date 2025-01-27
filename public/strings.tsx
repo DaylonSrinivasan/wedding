@@ -74,7 +74,7 @@ export const STRINGS = {
     },
     CALIFORNIA_DINNER: {
         TITLE: {
-            ENGLISH: "California Dinner Hangout",
+            ENGLISH: "California Post-Game",
             JAPANESE: "カリフォルニアディナー / バーハングアウト",
         },
         DESCRIPTION: {
@@ -92,10 +92,6 @@ export const STRINGS = {
         DRESS_CODE: {
             ENGLISH: "Be you :)",
             JAPANESE: "お好きな服装でお越しください。",
-        },
-        RSVP_FORM: {
-            ENGLISH: "https://docs.google.com/forms/d/e/1FAIpQLSe0RH6C8ISg1NsCzubs2L48sMtQQdKY7QPKUiAgMB1OYDiNqg/viewform?usp=sharing",
-            JAPANESE: "https://docs.google.com/forms/d/e/1FAIpQLSe0RH6C8ISg1NsCzubs2L48sMtQQdKY7QPKUiAgMB1OYDiNqg/viewform?usp=sharing",
         },
     },
     JAPAN_WEDDING: {
@@ -119,14 +115,10 @@ export const STRINGS = {
             ENGLISH: "Not sure yet, but western cocktail attire is probably fine.",
             JAPANESE: "まだ未定ですが、西洋風のカクテルドレスやスーツが無難です。",
         },
-        RSVP_FORM: {
-            ENGLISH: "https://docs.google.com/forms/d/e/1FAIpQLSfuZ5C76VrQaDunwKtq5BeuBZ3LboV9JkhpvWcaYKddiPe1QA/viewform?usp=sharing",
-            JAPANESE: "https://docs.google.com/forms/d/e/1FAIpQLSfuZ5C76VrQaDunwKtq5BeuBZ3LboV9JkhpvWcaYKddiPe1QA/viewform?usp=sharing",
-        },
     },
     JAPAN_DINNER: {
         TITLE: {
-            ENGLISH: "Japan Dinner / Hangout",
+            ENGLISH: "Japan Post-Game",
             JAPANESE: "日本ディナー / ハングアウト",
         },
         DESCRIPTION: {
@@ -144,10 +136,6 @@ export const STRINGS = {
         DRESS_CODE: {
             ENGLISH: "Be you :)",
             JAPANESE: "お好きな服装でお越しください。",
-        },
-        RSVP_FORM: {
-            ENGLISH: "TODO",
-            JAPANESE: "TODO",
         },
     },
     FAQ: {
@@ -189,7 +177,7 @@ export const STRINGS = {
                 JAPANESE: "TODO",
             },
             ANSWER: {
-                ENGLISH: "We'd love for our wedding to be your night off! Rule of thumb: older kids who do not require parental supervision are more than welcome :)",
+                ENGLISH: "We'd love for our wedding to be your night off! Children who do not require supervision are welcome to attend.",
                 JAPANESE: "TODO",
             }
         },
@@ -203,16 +191,6 @@ export const STRINGS = {
                     "Rika and I are still selecting our catering, but we are likely to serve buffet style with both vegetarian and non-vegetarian options!",
                     "If you have any special dietary requests, please indicate in your RSVP form!",
                 ],
-                JAPANESE: "TODO",
-            }
-        },
-        {
-            QUESTION: {
-                ENGLISH: "Will there be an open bar?",
-                JAPANESE: "TODO",
-            },
-            ANSWER: {
-                ENGLISH: "Yes! Both our California and Japan venues will offer complimentary open bars for our guests - please enjoy!!",
                 JAPANESE: "TODO",
             }
         },
@@ -253,16 +231,6 @@ export const STRINGS = {
                     "No registry! Your presents is the greatest presence.",
                     "If you would like to contribute to our honeymoon fund, we'll have a gift-box at the wedding to collect any physical gifts! Or you can venmo me at (link)"
                 ],
-                JAPANESE: "TODO",
-            }
-        },
-        {
-            QUESTION: {
-                ENGLISH: "You guys are so cute together!",
-                JAPANESE: "TODO",
-            },
-            ANSWER: {
-                ENGLISH: "That's not a question! But thank you, we know!!",
                 JAPANESE: "TODO",
             }
         },
