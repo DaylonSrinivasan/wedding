@@ -44,8 +44,8 @@ export default function Home() {
     const galleryRef = useRef<HTMLDivElement | null>(null);
     const navLinks = [
         { ref: languageSelectRef, title: STRINGS.LANGUAGE[language] },
-        { ref: welcomeRef, title: STRINGS.WELCOME[language] },
         { ref: ourStoryRef, title: STRINGS.OUR_STORY[language] },
+        { ref: welcomeRef, title: STRINGS.WELCOME[language] },
         { ref: eventsRef, title: STRINGS.EVENTS[language] },
         { ref: faqRef, title: STRINGS.FAQ[language] },
         { ref: rsvpRef, title: STRINGS.RSVP[language] },

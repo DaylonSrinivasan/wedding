@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Section from '../Section/Section';
 
-
 interface WelcomeProps {
     language: Language
 }
@@ -16,14 +15,14 @@ interface WelcomeProps {
 const Welcome: React.FC<WelcomeProps> = ({ language }) => {
     return (
         <Section background="/images/plain-background-6.jpg">
-            <SectionHeader text={STRINGS.WERE_GETTING_MARRIED[language]} />
+            <SectionHeader text={STRINGS.WELCOME[language]} />
 
             <div className="flex flex-col md:flex-row items-center justify-between mt-6"> 
                 <motion.div
                     initial={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
-                    className="w-full md:w-1/2"
+                    className="w-full md:w-1/2 flex-shrink-0"
                 >
                     <Image
                         src={EngagementPhoto}

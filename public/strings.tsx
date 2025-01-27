@@ -25,14 +25,17 @@ export const STRINGS = {
     },
     WELCOME_MESSAGE: {
         ENGLISH: [
-            "Rika and I are SO excited to celebrate our special day with you!",
-            "Join us for our ceremonies in California or Tokyo—whichever works best for you!",
+            "Rika and I are so excited to celebrate our special day with you!",
+            "We will be having two ceremonies: one in California and one in Tokyo. We'd love for you to join whichever ceremony is most convenient for you! See event details below.",
             "Get ready to eat, drink, laugh, and dance the night away! ♪₍₍٩( ᐛ )۶₎₎♪",
+            "If you have any questions, Rika and Daylon are just a message away :)"
         ],
         JAPANESE: [
-            "りかと私は、皆さんと一緒に結婚をお祝いできることにとてもワクワクしています！ TODO",
-            "カリフォルニアまたは東京でのセレモニーにぜひご参加ください。ご都合の良い方を選んでくださいね！",
-            "食べて、飲んで、笑って、夜を踊りながら楽しんでくださいね！ ♪₍₍٩( ᐛ )۶₎₎♪",]
+            "私たちの特別な日を一緒にお祝いできることをとても楽しみにしています！",
+            "カリフォルニアと東京で2つのセレモニーを開催します。ご都合の良い方にぜひご参加ください！イベントの詳細は以下をご覧ください。",
+            "食べて、飲んで、笑って、夜通し踊る準備をしてください！♪₍₍٩( ᐛ )۶₎₎♪",
+            "ご質問があれば、RikaまたはDaylonにお気軽にメッセージを送ってくださいね:)"
+        ],
     },
     OUR_STORY: {
         ENGLISH: "Our Story",
