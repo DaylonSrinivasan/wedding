@@ -15,6 +15,24 @@ export const STRINGS = {
         ENGLISH: "Rika and Daylon",
         JAPANESE: "リカとデイロン",
     },
+    OUR_STORY: {
+        ENGLISH: "Our Story",
+        JAPANESE: "私たちのストーリー",
+    },
+    OUR_STORY_MESSAGE: {
+        ENGLISH: [
+            "Rika and I met in fall 2022 in NYC, bonding over Broadway, karaoke, Love Is Blind, and exploring the city together.",
+            "After a year of dating, we moved in together in Hell's Kitchen, enjoying amazing restaurants, Broadway shows, and $5 frozen margaritas nearby.",
+            "We eventually planned a move to California. Just weeks before, I surprised Rika with a dreamy picnic proposal along the Hudson River, surrounded by friends.",
+            "Now, we’ve settled in Sunnyvale, loving the warm weather and wedding planning. We can’t wait to celebrate with you and make unforgettable memories!"
+        ],
+        JAPANESE: [
+            "リカと私は2022年の秋、ニューヨークで出会い、ブロードウェイやカラオケ、『ラブ・イズ・ブラインド』、街探訪で意気投合しました。",
+            "1年後、私たちはヘルズキッチンで一緒に暮らし始め、素晴らしいレストランやブロードウェイ、5ドルのフローズンマルガリータを満喫しました。",
+            "その後、カリフォルニアへの引っ越しを計画。引っ越し直前、デイロンはハドソン川沿いで友人に囲まれたピクニックプロポーズでサプライズをしました。",
+            "今ではサニーベールで新生活を楽しみながら結婚式の準備中です。皆さんとお祝いし、忘れられない思い出を作るのを楽しみにしています！"
+        ]
+    },
     WELCOME: {
         ENGLISH: "Welcome",
         JAPANESE: "ようこそ",
@@ -36,24 +54,6 @@ export const STRINGS = {
             "食べて、飲んで、笑って、夜通し踊る準備をしてください！♪₍₍٩( ᐛ )۶₎₎♪",
             "ご質問があれば、RikaまたはDaylonにお気軽にメッセージを送ってくださいね:)"
         ],
-    },
-    OUR_STORY: {
-        ENGLISH: "Our Story",
-        JAPANESE: "私たちのストーリー",
-    },
-    OUR_STORY_MESSAGE: {
-        ENGLISH: [
-            "Rika and I met in the fall of 2022 in the heart of New York City! We found a shared passion for Broadway, karaoke nights, binge-watching Love Is Blind, and exploring the city together.",
-            "After about a year of dating, we found an apartment together in Hell's Kitchen. Awesome restaurants, Broadway, and $5 frozen margharitas were all minutes away!",
-            "Eventually, we made plans move to California together. We made arrangements with our jobs, packed our limited items, and prepared to start a new life together. Just weeks before the move, Daylon pulled off the ultimate surprise—a dreamy picnic proposal along the Hudson River, surrounded by our closest friends.",
-            "Now, we're settling into our new home in Sunnyvale, enjoying the warm weather, and enjoying our newest hobby: wedding planning! We can't wait to celebrate with you all and make even more unforgettable memories together!",
-        ],
-        JAPANESE: [
-            "リカと私は2022年の秋、ニューヨーク市の中心で出会いました！ ブロードウェイ、カラオケの夜、『ラブ・イズ・ブラインド』の一気見、そして一緒に街を探索するという共通の情熱を見つけました。",
-            "約1年の交際の後、私たちはヘルズキッチンに一緒にアパートを見つけました。素晴らしいレストラン、ブロードウェイ、そして5ドルのフローズンマルガリータがすぐ近くにありました！",
-            "その後、一緒にカリフォルニアに引っ越す計画を立てました。仕事の調整をし、荷物をまとめ、新しい生活を始める準備をしました。引っ越しの数週間前、デイロンは究極のサプライズを仕掛けました。ハドソン川沿いで親しい友人に囲まれながらの夢のようなピクニックプロポーズでした。",
-            "現在、私たちはサニーベールの新しい家に落ち着き、暖かい気候を楽しみながら、新しい趣味である結婚式の準備を楽しんでいます！ 皆さんと一緒にお祝いし、さらに忘れられない思い出を作るのが待ちきれません！"
-        ]
     },
     EVENTS: {
         ENGLISH: "Events",
