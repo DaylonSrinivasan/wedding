@@ -169,7 +169,7 @@ const Gallery: React.FC<GalleryProps> = ({ language }) => {
     const totalImageWidth = imageWidth + imageMargin;
 
     const totalGalleryWidth = totalImageWidth * duplicatedImages.length;
-    const animationDuration = 120; // Fixed animation speed (seconds)
+    const animationDuration = 240; // Fixed animation speed (seconds)
 
     const startAnimation = useCallback(async () => {
         await controls.start({
