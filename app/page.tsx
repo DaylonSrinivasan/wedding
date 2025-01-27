@@ -6,6 +6,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LanguageSelect from "./Components/LanguageSelect/LanguageSelect";
 import Welcome from "./Components/Welcome/Welcome";
+import OurStory from "./Components/OurStory/OurStory";
 import Events from "./Components/Events/Events";
 import Footer from "./Components/Footer/Footer";
 import Rsvp from "./Components/Rsvp/Rsvp";
@@ -35,6 +36,8 @@ export default function Home() {
 
     const languageSelectRef = useRef<HTMLDivElement | null>(null);
     const welcomeRef = useRef<HTMLDivElement | null>(null);
+    const ourStoryRef = useRef<HTMLDivElement | null>(null);
+
     const eventsRef = useRef<HTMLDivElement | null>(null);
     const faqRef = useRef<HTMLDivElement | null>(null);
     const rsvpRef = useRef<HTMLDivElement | null>(null);
@@ -42,6 +45,7 @@ export default function Home() {
     const navLinks = [
         { ref: languageSelectRef, title: STRINGS.LANGUAGE[language] },
         { ref: welcomeRef, title: STRINGS.WELCOME[language] },
+        { ref: ourStoryRef, title: STRINGS.OUR_STORY[language] },
         { ref: eventsRef, title: STRINGS.EVENTS[language] },
         { ref: faqRef, title: STRINGS.FAQ[language] },
         { ref: rsvpRef, title: STRINGS.RSVP[language] },
@@ -116,7 +120,7 @@ export default function Home() {
                     transition={{ duration: 1 }}
                 >
                     <AnimatePresence>
-                                                {/* NavBar is always shown on small screens (below md) */}
+                        {/* NavBar is always shown on small screens (below md) */}
 
                         <motion.div
                             key="mobile-nav"
@@ -133,7 +137,7 @@ export default function Home() {
                             key="desktop-nav"
                             className="hidden md:block"
                             initial={{ opacity: 0 }}
-                            animate={{ opacity: showNavBar ? 1 : 0  }}
+                            animate={{ opacity: showNavBar ? 1 : 0 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.5 }}
                         >
@@ -143,6 +147,9 @@ export default function Home() {
                     </AnimatePresence>
                     <div ref={languageSelectRef}>
                         <LanguageSelect language={language} onLanguageChange={handleLanguageChange} />
+                    </div>
+                    <div ref={ourStoryRef}>
+                        <OurStory language={language} />
                     </div>
                     <div ref={welcomeRef}>
                         <Welcome language={language} />
