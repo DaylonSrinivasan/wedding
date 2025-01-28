@@ -164,7 +164,7 @@ export const STRINGS = {
         JAPANESE: "よくある質問",
     },
     FREQUENTLY_ASKED_QUESTIONS_TITLE: {
-        ENGLISH: "Frequently Asked Questions",
+        ENGLISH: "FAQs",
         JAPANESE: "よくある質問",
     },
     FREQUENTLY_ASKED_QUESTIONS: [
