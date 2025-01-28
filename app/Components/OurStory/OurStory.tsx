@@ -19,8 +19,8 @@ const OurStory: React.FC<OurStoryProps> = ({ language }) => {
 
             <div className="flex flex-col md:flex-row items-center justify-between mt-6"> 
                 <motion.div
-                    initial={{ opacity: 0, x: -100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                     className="w-full md:w-1/2 flex-shrink-0"
                 >
@@ -32,8 +32,8 @@ const OurStory: React.FC<OurStoryProps> = ({ language }) => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ opacity: 0, x: -300 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.75 }}
                     className="mt-6 md:mt-0 md:ml-6 text-left font-serif text-gray-800"
                 >
