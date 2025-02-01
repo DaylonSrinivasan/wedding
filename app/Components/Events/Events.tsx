@@ -28,7 +28,7 @@ const Events: React.FC<EventsProps> = ({ language }) => {
     return (
         <Section background="/images/plain-background-2.jpg">
             <SectionHeader text={STRINGS.EVENTS[language]} />
-            <div className="w-full">
+            <div className="w-full pb-8">
                 <Slider {...settings}>
                     <div>
                         <Event
