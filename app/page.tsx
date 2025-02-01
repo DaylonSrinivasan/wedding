@@ -1,6 +1,6 @@
 "use client";
 
-import { Merriweather, Dancing_Script } from 'next/font/google';
+import { Merriweather, Dancing_Script, Outfit } from 'next/font/google';
 
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -19,8 +19,9 @@ import Envelope from "./Components/Envelope/Envelope";
 import { Language, STRINGS } from "../public/strings";
 
 const merriweather = Merriweather({ subsets: ['latin'], weight: "400" });
-
 const dancingScripts = Dancing_Script({ subsets: ['latin'] });
+const outfit = Outfit({ subsets: ['latin'] })
+
 
 
 export default function Home() {
@@ -37,15 +38,14 @@ export default function Home() {
     const languageSelectRef = useRef<HTMLDivElement | null>(null);
     const welcomeRef = useRef<HTMLDivElement | null>(null);
     const ourStoryRef = useRef<HTMLDivElement | null>(null);
-
     const eventsRef = useRef<HTMLDivElement | null>(null);
     const faqRef = useRef<HTMLDivElement | null>(null);
     const rsvpRef = useRef<HTMLDivElement | null>(null);
     const galleryRef = useRef<HTMLDivElement | null>(null);
     const navLinks = [
         { ref: languageSelectRef, title: STRINGS.LANGUAGE[language] },
-        { ref: ourStoryRef, title: STRINGS.OUR_STORY[language] },
         { ref: welcomeRef, title: STRINGS.WELCOME[language] },
+        { ref: ourStoryRef, title: STRINGS.OUR_STORY[language] },
         { ref: eventsRef, title: STRINGS.EVENTS[language] },
         { ref: faqRef, title: STRINGS.FAQ[language] },
         { ref: rsvpRef, title: STRINGS.RSVP[language] },
@@ -91,7 +91,7 @@ export default function Home() {
     };
 
     return (
-        <div className={`relative ${merriweather.className} ${dancingScripts.className}`}>
+        <div className={`relative ${merriweather.className} ${dancingScripts.className} ${outfit.className}`}>
             {!showHomepage ? (
                 <motion.div
                     initial={{ opacity: 1 }}
@@ -148,11 +148,11 @@ export default function Home() {
                     <div ref={languageSelectRef}>
                         <LanguageSelect language={language} onLanguageChange={handleLanguageChange} />
                     </div>
-                    <div ref={ourStoryRef}>
-                        <OurStory language={language} />
-                    </div>
                     <div ref={welcomeRef}>
                         <Welcome language={language} />
+                    </div>
+                    <div ref={ourStoryRef}>
+                        <OurStory language={language} />
                     </div>
                     <div ref={eventsRef}>
                         <Events language={language} />

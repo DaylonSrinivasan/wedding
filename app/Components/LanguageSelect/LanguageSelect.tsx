@@ -18,7 +18,7 @@ const LanguageSelect: React.FC<LanguageSelectProps> = ({ language, onLanguageCha
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
-                className="text-5xl font-elegant font-bold text-black drop-shadow-lg mb-6"
+                className="text-5xl text-center font-elegant font-bold text-black drop-shadow-lg mb-6"
             >
                 {STRINGS.RIKA_AND_DAYLON[language]}
             </motion.h1>
