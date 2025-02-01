@@ -13,7 +13,7 @@ function NavBar({ links, onClick }: NavBarProps) {
     return (
 
         <div className="font-title">
-            <nav className="w-full bg-orange-300 fixed top-0 left-0 right-0 z-10">
+            <nav className="w-full bg-orange-600 fixed top-0 left-0 right-0 z-10">
                 <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         {/* HAMBURGER BUTTON FOR MOBILE */}
@@ -39,7 +39,7 @@ function NavBar({ links, onClick }: NavBarProps) {
                                 {links.map(({ ref, title }) => (
                                     <li
                                         key={title}
-                                        className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-amber-900 border-amber-900 md:hover:text-amber-600 md:hover:bg-transparent"
+                                        className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-amber-900 border-amber-900 md:hover:text-amber-300 md:hover:bg-transparent"
                                     >
                                         <button
                                             className="w-full text-left"
