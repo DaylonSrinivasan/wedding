@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         elegant: ['Dancing Script', 'serif'],
         title: ['Merriweather', 'serif'],
+        text: ['Outfit', 'serif'],
       },
     },
   },

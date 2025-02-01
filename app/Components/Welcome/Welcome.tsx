@@ -34,7 +34,7 @@ const Welcome: React.FC<WelcomeProps> = ({ language }) => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.75 }}
-                    className="mt-6 md:mt-0 md:ml-6 text-left font-serif text-gray-800"
+                    className="mt-6 md:mt-0 md:ml-6 text-left font-text text-gray-800"
                 >
                     {STRINGS.WELCOME_MESSAGE[language].map((paragraph, index) => (
                         <p key={index} className="text-2xl leading-relaxed mb-4">{paragraph}</p>

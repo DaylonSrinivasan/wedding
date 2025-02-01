@@ -31,7 +31,7 @@ const Event: React.FC<EventProps> = ({ language, img, title, description, time, 
                     className="rounded-lg h-auto max-h-[50vh] w-full object-cover"
                 />
             </div>
-            <div className="mt-6 md:mt-0 md:ml-6 text-left font-serif text-gray-800 w-full md:w-1/2">
+            <div className="mt-6 md:mt-0 md:ml-6 text-left font-text text-gray-800 w-full md:w-1/2">
                 <h2 className="text-3xl font-semibold text-gray-900 mb-2">{title}</h2>
                 <p className="text-xl text-gray-700 mb-4">{description}</p>
                 <p className="text-lg text-gray-600 mb-2">

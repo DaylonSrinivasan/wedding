@@ -20,7 +20,7 @@ const Faq: React.FC<FaqProps> = ({ language }) => {
             <SectionHeader text={STRINGS.FREQUENTLY_ASKED_QUESTIONS_TITLE[language]} />
 
             <div className="flex flex-col items-center justify-center mt-6 w-full">
-                <div className="text-center font-serif text-gray-800 w-full">
+                <div className="text-center font-text text-gray-800 w-full">
                     <div>
                         {(STRINGS.FREQUENTLY_ASKED_QUESTIONS as QA[]).map((qa, index) => (
                             <div key={index} className="p-4">
