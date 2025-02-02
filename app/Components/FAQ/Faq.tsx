@@ -22,21 +22,24 @@ const Faq: React.FC<FaqProps> = ({ language }) => {
             <div className="flex flex-col items-center justify-center mt-6 w-full">
                 <div className="text-center font-text text-gray-800 w-full">
                     <div>
-                        {(STRINGS.FREQUENTLY_ASKED_QUESTIONS as QA[]).map((qa, index) => (
-                            <div key={index} className="p-4">
-                                <div className="mb-6">
-                                    <h3 className="text-2xl font-semibold mb-2">{qa.QUESTION[language]}</h3>
-                                    <p className="text-xl leading-relaxed">
-                                        {Array.isArray(qa.ANSWER[language])
-                                            ? (qa.ANSWER[language] as string[]).map((a, i) => (
-                                                <React.Fragment key={i}>{a}<br /></React.Fragment>
-                                              ))
-                                            : qa.ANSWER[language]}
-                                    </p>
+                        {(STRINGS.FREQUENTLY_ASKED_QUESTIONS as QA[]).map((qa, index) =>
+                            qa.QUESTION[language] && qa.ANSWER[language] ? (
+                                <div key={index} className="p-4">
+                                    <div className="mb-6">
+                                        <h3 className="text-2xl font-semibold mb-2">{qa.QUESTION[language]}</h3>
+                                        <p className="text-xl leading-relaxed">
+                                            {Array.isArray(qa.ANSWER[language])
+                                                ? (qa.ANSWER[language] as string[]).map((a, i) => (
+                                                    <React.Fragment key={i}>{a}<br /></React.Fragment>
+                                                ))
+                                                : qa.ANSWER[language]}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ) : null
+                        )}
                     </div>
+
                 </div>
             </div>
         </Section>

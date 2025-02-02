@@ -46,33 +46,34 @@ const Events: React.FC<EventsProps> = ({ language }) => {
                         <Event
                             language={language}
                             img={BarImage}
-                            title={STRINGS.CALIFORNIA_DINNER.TITLE[language]}
-                            description={STRINGS.CALIFORNIA_DINNER.DESCRIPTION[language]}
-                            time={STRINGS.CALIFORNIA_DINNER.TIME[language]}
-                            location={STRINGS.CALIFORNIA_DINNER.LOCATION[language]}
-                            dressCode={STRINGS.CALIFORNIA_DINNER.DRESS_CODE[language]}
+                            title={STRINGS.CALIFORNIA_AFTER_SOCIAL.TITLE[language]}
+                            description={STRINGS.CALIFORNIA_AFTER_SOCIAL.DESCRIPTION[language]}
+                            time={STRINGS.CALIFORNIA_AFTER_SOCIAL.TIME[language]}
+                            location={STRINGS.CALIFORNIA_AFTER_SOCIAL.LOCATION[language]}
+                            dressCode={STRINGS.CALIFORNIA_AFTER_SOCIAL.DRESS_CODE[language]}
                         />
                     </div>
                     <div>
                         <Event
                             language={language}
                             img={BellClassicImage}
-                            title={STRINGS.JAPAN_WEDDING.TITLE[language]}
-                            description={STRINGS.JAPAN_WEDDING.DESCRIPTION[language]}
-                            time={STRINGS.JAPAN_WEDDING.TIME[language]}
-                            location={STRINGS.JAPAN_WEDDING.LOCATION[language]}
-                            dressCode={STRINGS.JAPAN_WEDDING.DRESS_CODE[language]}
+                            title={STRINGS.TOKYO_WEDDING.TITLE[language]}
+                            description={STRINGS.TOKYO_WEDDING.DESCRIPTION[language]}
+                            time={STRINGS.TOKYO_WEDDING.TIME[language]}
+                            location={STRINGS.TOKYO_WEDDING.LOCATION[language]}
+                            locationUrl={"https://maps.app.goo.gl/otZtQuinTvP7qCoN8"}
+                            dressCode={STRINGS.TOKYO_WEDDING.DRESS_CODE[language]}
                         />
                     </div>
                     <div>
                         <Event
                             language={language}
                             img={TokyoBarImage}
-                            title={STRINGS.JAPAN_DINNER.TITLE[language]}
-                            description={STRINGS.JAPAN_DINNER.DESCRIPTION[language]}
-                            time={STRINGS.JAPAN_DINNER.TIME[language]}
-                            location={STRINGS.JAPAN_DINNER.LOCATION[language]}
-                            dressCode={STRINGS.JAPAN_DINNER.DRESS_CODE[language]}
+                            title={STRINGS.TOKYO_AFTER_SOCIAL.TITLE[language]}
+                            description={STRINGS.TOKYO_AFTER_SOCIAL.DESCRIPTION[language]}
+                            time={STRINGS.TOKYO_AFTER_SOCIAL.TIME[language]}
+                            location={STRINGS.TOKYO_AFTER_SOCIAL.LOCATION[language]}
+                            dressCode={STRINGS.TOKYO_AFTER_SOCIAL.DRESS_CODE[language]}
                         />
                     </div>
                 </Slider>
