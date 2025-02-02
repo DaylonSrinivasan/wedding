@@ -24,13 +24,13 @@ export const STRINGS = {
             "Rika and Daylon met in fall 2022 in NYC, bonding over Broadway, karaoke, Love Is Blind, and exploring the city together.",
             "After a year of dating, we moved in together in Hell's Kitchen, enjoying amazing restaurants, Broadway shows, and $5 frozen margaritas nearby.",
             "We eventually planned a move to California. Just weeks before, Daylon surprised Rika with a dreamy picnic proposal along the Hudson River, surrounded by friends.",
-            "Now, we’ve settled in Sunnyvale, loving the warm weather and wedding planning. We can’t wait to celebrate with you and make unforgettable memories!"
+            "Now, we've settled in Sunnyvale, loving the warm weather and our newest hobby: wedding planning! We can't wait to celebrate with you and make unforgettable memories!"
         ],
         JAPANESE: [
             "私達ふたりは2022年の秋、ニューヨークで出会い、ブロードウェイやカラオケ、Netflixのショー『ラブ・イズ・ブラインド』などを通じて仲を深めました。",
             "交際が始まってから1年後、マンハッタンのタイムズスクエア周辺にふたりで引越し、近所のオシャレなレストランやたくさんのブロードウェイのショー、または行きつけの格安のカクテルバーなどでたくさんの思い出を作りました。",
             "その後、カリフォルニア州への引っ越しを計画。引っ越し直前に、デイロンはハドソン川沿いでピクニックを計画し、友人に見守れる中サプライズでプロポーズをしました。",
-            "現在ふたりはカリフォルニア州サニーベールで新生活を楽しみながら結婚式の準備をしています。当日、お祝いしに来ていただける皆さんと一緒に素敵な思い出を作ることをとても楽しみにしています！"
+            "現在ふたりはカリフォルニア州サニーベールで新生活を楽しみながら結婚式の準備をしています。当日、お祝いに来ていただける皆さんと一緒に素敵な思い出を作ることをとても楽しみにしています！"
         ]
     },
     WELCOME: {
@@ -92,7 +92,7 @@ export const STRINGS = {
             JAPANESE: "Saratoga Springs　22801 Big Basin Way, Saratoga, CA 95070",
         },
         DRESS_CODE: {
-            ENGLISH: "Cocktail attire. It's an entirely outdoor venue - wear something comfortable!",
+            ENGLISH: "Cocktail attire: Dresses, jumpsuits, or dressy separates for women; suits or dress shirts with slacks for men. The venue is entirely outdoors, so wear something comfortable!",
             JAPANESE: "綺麗めな服装ならOK!（例：カクテルドレス、スーツなど。）結婚式は屋外で行うため、温度調節の可能な服装でお越しください。",
         },
     },
@@ -136,7 +136,7 @@ export const STRINGS = {
             JAPANESE: "ホテルベルクラシック東京　〒170-0005 東京都豊島区南大塚 3-33-6 ",
         },
         DRESS_CODE: {
-            ENGLISH: "Semi-formal. Japanese traditional attire is welcomed too!",
+            ENGLISH: "Semi-formal. Japanese (or Indian) traditional attire is welcome too!",
             JAPANESE: "セミフォーマル。和装でもOK!　東京の結婚式は屋内で行います。",
         },
     },
@@ -164,11 +164,11 @@ export const STRINGS = {
     },
     FAQ: {
         ENGLISH: "FAQ",
-        JAPANESE: "よくある質問",
+        JAPANESE: "よくあるご質問",
     },
     FREQUENTLY_ASKED_QUESTIONS_TITLE: {
         ENGLISH: "FAQs",
-        JAPANESE: "よくある質問",
+        JAPANESE: "よくあるご質問",
     },
     FREQUENTLY_ASKED_QUESTIONS: [
         {
@@ -192,7 +192,7 @@ export const STRINGS = {
         {
             QUESTION: {
                 ENGLISH: "Can I bring a +1?",
-                JAPANESE: "同伴者を連れて行ってもいいですか？",
+                JAPANESE: "追加のゲストを連れて行ってもいいですか？",
             },
             ANSWER: {
                 ENGLISH: "Yes! Everyone is welcome to bring an adult +1. Partner, friend, family member: anyone who'll be able to enjoy our wedding with you is welcome!",
@@ -250,10 +250,11 @@ export const STRINGS = {
             },
             ANSWER: {
                 ENGLISH: [
-                    "The California wedding venue is easily accessible by car, and there's plenty of parking! Uber and Lyft are also great options.",
-                    "The nearest airport is San Jose Intenational Airport, which is about 30 minutes driving.",
-                    "For folks coming from out of town, we are brainstorming providing transportation assistance (shuttle, or organizing carpools).",
-                    "If you'd be interested, please indicate your interest in the RSVP form!",
+                    "For the California wedding, the nearest airport is San Jose International Airport, which is about a 30 minute drive from the wedding venue.",
+                    "The venue is easily accessible by car, and there's plenty of parking! Uber and Lyft are also great options.",
+                    "For folks coming from out of town, we're brainstorming ways to provide transportation assistance (shuttle, carpools).",
+                    "If you'd be interested in learning more, please indicate your interest in the RSVP form!",
+                    "",
                     "The Tokyo wedding is a 1 min walk from JR Yamanote-line Otsuka Station or a 5 min walk from Tokyo Metro Marunocuchi-Line Shin-Otsuka Station.",
                 ],
                 JAPANESE: [
@@ -276,6 +277,7 @@ export const STRINGS = {
                 ENGLISH: [
                     "For the California wedding, we expect the weather to be warm and dry with very little to no rain.",
                     "It can get pretty hot before sunset around 8:00PM, but it might get cool and breezy at night.",
+                    "",
                     "For the Tokyo wedding, September is still part of Tokyo's typhoon season so it might be rainy.",
                     "Typically, September is still hot and humid in Tokyo, but we will have an indoor wedding! "
                 ],
@@ -293,8 +295,9 @@ export const STRINGS = {
             },
             ANSWER: {
                 ENGLISH: [
-                    "No registry! Your presence is the greatest present.",
-                    "If you would like to contribute to our honeymoon fund, you can venmo us at (link):) We'll also have a gift-box at the wedding to collect any physical gifts!", 
+                    "No registry! The gift we're most excited for is seeing everyone's smiles and sweet dance moves :)",
+                    "We'll have a gift box at the wedding to gather any cards or small gifts you'd like to share with us!",
+                    "Or if you prefer to contribute to our wedding expenses, you're welcome to send a gift via Zelle at (925) 588 9935 - but this is super optional!",
                 ],
             }
         },

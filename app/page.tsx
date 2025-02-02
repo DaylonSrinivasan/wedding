@@ -67,7 +67,7 @@ export default function Home() {
             setShowNavBar(true); // Show buttons when user starts scrolling
             timeoutId = setTimeout(() => {
                 setShowNavBar(false);
-            }, 2000); // Hide after 2 seconds of inactivity
+            }, 4000); // Hide after 4 seconds of inactivity
         };
 
         window.addEventListener("scroll", handleScroll);
