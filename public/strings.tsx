@@ -196,7 +196,7 @@ export const STRINGS = {
             },
             ANSWER: {
                 ENGLISH: "Yes! Everyone is welcome to bring an adult +1. Partner, friend, family member: anyone who'll be able to enjoy our wedding with you is welcome!",
-                JAPANESE: "はい！どなたでも大人のゲストを１名連れてきていただくことが可能です。パートナー、友人、家族など、一緒に結婚式を楽しめる方なら大歓迎です！",
+                JAPANESE: "はい！どなたでも大人のゲストを１名連れてきていただくことができます。パートナー、友人、家族など、一緒に結婚式を楽しめる方なら大歓迎です！",
             }
         },
         {
@@ -206,7 +206,7 @@ export const STRINGS = {
             },
             ANSWER: {
                 ENGLISH: "We'd love for our wedding to be your night off! Children who do not require supervision are welcome to attend.",
-                JAPANESE: "ゲストの皆さんに楽しいひとときを過ごしてもらいため、付き添いの必要のない10代のお子様は参加可能です。",
+                JAPANESE: "ゲストの皆さんに楽しいひとときを過ごしてもらいため、付き添いの必要のない10代のお子様は参加いただけます。",
             }
         },
         {
@@ -239,7 +239,7 @@ export const STRINGS = {
                 JAPANESE: [
                     "カリフォルニアの結婚式に関してはまだリサーチ中です。おすすめのホテル情報は後ほどこのページでお知らせします！",
                     "東京の結婚式に関しては、式場がホテルのため、結婚式のゲストは割引価格で滞在することができます。",
-                    "カリフォルニアでのホテルの団体予約、またはホテルベルクラシック東京のお部屋予約にご興味のある方は、出欠フォームでその旨お知らせください。",
+                    "カリフォルニアでのホテルの団体予約、またはホテルベルクラシック東京でのご宿泊にご興味のある方は、出欠フォームでその旨お知らせください。",
                 ],
             }
         },
