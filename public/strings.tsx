@@ -212,7 +212,7 @@ export const STRINGS = {
         {
             QUESTION: {
                 ENGLISH: "What food options will be available?",
-                JAPANESE: "お料理はどのようなものなりますか？",
+                JAPANESE: "お料理はどのようなものになりますか？",
             },
             ANSWER: {
                 ENGLISH: [
