@@ -233,12 +233,16 @@ export const STRINGS = {
             ANSWER: {
                 ENGLISH: [
                     "For the California wedding, we are still doing research - come check this page later for recommendations!",
+                    "",
                     "For the Japan wedding, the wedding venue is a hotel and they offer speical pricing for wedding guests. There are so many other hotels in Tokyo as well!",
+                    "",
                     "If you'd be interested in joining a hotel block in California or staying at Hotel Bell Classic Tokyo, please indicate your interest in the RSVP form.",
                 ],
                 JAPANESE: [
                     "カリフォルニアの結婚式に関してはまだリサーチ中です。おすすめのホテル情報は後ほどこのページでお知らせします！",
+                    "",
                     "東京の結婚式に関しては、式場がホテルのため、結婚式のゲストは割引価格で滞在することができます。",
+                    "",
                     "カリフォルニアでのホテルの団体予約、またはホテルベルクラシック東京でのご宿泊にご興味のある方は、出欠フォームでその旨お知らせください。",
                 ],
             }
