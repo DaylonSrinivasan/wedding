@@ -220,7 +220,7 @@ export const STRINGS = {
                     "If you have any special dietary requests, please indicate in your RSVP form!",
                 ],
                 JAPANESE: [
-                    "まだ料理の内容は未定ですが、ベジタリアン向けとノンベジタリアン向けのお料理を両方を用意する予定です！",
+                    "まだ料理の内容は未定ですが、ベジタリアン向けとノンベジタリアン向けのお料理を両方用意する予定です！",
                     "アレルギー対応も可能なので、食事に関するリクエストがある場合は、出欠フォームにその旨ご記入ください。",
                 ],
             }
@@ -259,7 +259,7 @@ export const STRINGS = {
                     "For folks coming from out of town, we're brainstorming ways to provide transportation assistance (shuttle, carpools).",
                     "If you'd be interested in learning more, please indicate your interest in the RSVP form!",
                     "",
-                    "The Tokyo wedding is a 1 min walk from JR Yamanote-line Otsuka Station or a 5 min walk from Tokyo Metro Marunocuchi-Line Shin-Otsuka Station.",
+                    "The Tokyo wedding is a 1 min walk from JR Yamanote-line Otsuka Station or a 5 min walk from Tokyo Metro Marunouchi-Line Shin-Otsuka Station.",
                 ],
                 JAPANESE: [
                     "カリフォルニアの会場は車で簡単にアクセス可能で、駐車場もたくさんあります！ ",
