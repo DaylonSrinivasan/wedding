@@ -216,8 +216,9 @@ export const STRINGS = {
             },
             ANSWER: {
                 ENGLISH: [
-                    "We are still selecting our catering, but we plan to have both vegetarian and non-vegetarian options!",
-                    "If you have any special dietary requests, please indicate in your RSVP form!",
+                    "For the California wedding, we will be serving buffet style pastas, salads and steak, with some sides!",
+                    "",
+                    "For the Japan wedding, we are picking our catering, but it will most likely be a course meal. If you have any special dietary requests, please indicate in your RSVP form!",
                 ],
                 JAPANESE: [
                     "まだ料理の内容は未定ですが、ベジタリアン向けとノンベジタリアン向けのお料理を両方用意する予定です！",
