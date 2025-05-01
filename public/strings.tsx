@@ -124,8 +124,8 @@ export const STRINGS = {
             JAPANESE: "東京の結婚式",
         },
         DESCRIPTION: {
-            ENGLISH: "Ceremony, cocktail hour, performances and dancing!",
-            JAPANESE: "挙式、カクテルタイム、披露宴、ディナー、そしてダンスなどのパフォーマンス！",
+            ENGLISH: "Ceremony, cocktail hour, and performances!",
+            JAPANESE: "挙式、カクテルタイム、披露宴、ディナー、そしてパフォーマンス！",
         },
         TIME: {
             ENGLISH: "3:10PM-7:00PM (Doors Open 2:10PM),　Saturday, September 20, 2025",
@@ -221,7 +221,8 @@ export const STRINGS = {
                     "For the Japan wedding, we are picking our catering, but it will most likely be a course meal. If you have any special dietary requests, please indicate in your RSVP form!",
                 ],
                 JAPANESE: [
-                    "まだ料理の内容は未定ですが、ベジタリアン向けとノンベジタリアン向けのお料理を両方用意する予定です！",
+                    "カリフォルニアの結婚式ではブッフェ形式になります。お料理の内容はステーキ、パスタ、サラダなどです。",
+                    "東京の結婚式に関しては検討中ですが、コース料理になる予定です。",
                     "アレルギー対応も可能なので、食事に関するリクエストがある場合は、出欠フォームにその旨ご記入ください。",
                 ],
             }
@@ -233,18 +234,21 @@ export const STRINGS = {
             },
             ANSWER: {
                 ENGLISH: [
-                    "For the California wedding, we are still doing research - come check this page later for recommendations!",
+                    "For the California wedding, recommended hotels are Juniper Hotel Cupertino, Aloft Cupertino and DoubleTree by Hilton Hotel Campbell. Nightly rates start at around $190.",
+                    "Airbnb is likely to be a less expensive alternative. If you're interested in joining a group Airbnb, please let us know!",
                     "",
-                    "For the Japan wedding, the wedding venue is a hotel and they offer speical pricing for wedding guests. There are so many other hotels in Tokyo as well!",
+                    "For the Japan wedding, the wedding venue is a hotel and they offer special pricing for wedding guests.",
+                    "Please note that we might not be able to reserve rooms for everyone depending on the demand...there are so many other hotels in Tokyo as well!",
                     "",
-                    "If you'd be interested in joining a hotel block in California or staying at Hotel Bell Classic Tokyo, please indicate your interest in the RSVP form.",
+                    "To hear more about about group accomodation options, please indicate your interest in the RSVP form!"
                 ],
                 JAPANESE: [
-                    "カリフォルニアの結婚式に関してはまだリサーチ中です。おすすめのホテル情報は後ほどこのページでお知らせします！",
-                    "",
+                    "カリフォルニアの結婚式のおすすめホテルはJuniper Hotel Cupertino、Aloft Cupertino、またはDoubleTree by Hilton Hotel Campbellです。どのホテルも宿泊料金は＄190〜になります。",
+                    "少しお手頃な宿泊オプションとして、大人数でのAirbnb一軒貸切に興味がある方は、お知らせください！",
                     "東京の結婚式に関しては、式場がホテルのため、結婚式のゲストは割引価格で滞在することができます。",
+                    "ただし、希望するゲストの方全員のお部屋を確保できない可能性があるため、ご理解をお願いします。",
                     "",
-                    "カリフォルニアでのホテルの団体予約、またはホテルベルクラシック東京でのご宿泊にご興味のある方は、出欠フォームでその旨お知らせください。",
+                    "カリフォルニアでのグループ宿泊予約、またはホテルベルクラシック東京でのご宿泊にご興味のある方は、出欠フォームでその旨お知らせください。",
                 ],
             }
         },
