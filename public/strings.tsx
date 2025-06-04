@@ -146,8 +146,8 @@ export const STRINGS = {
             JAPANESE: "東京　二次会",
         },
         DESCRIPTION: {
-            ENGLISH: "Help us post-game our Japan Wedding :D Rika's going to reserve somewhere cool to hangout - full details TBD!",
-            JAPANESE: "東京での結婚式の後、余韻を一緒に楽しみましょう！会場等の詳細は後日お知らせします！",
+            ENGLISH: "Help us post-game our Japan Wedding :D Rika's going to reserve somewhee cool to hangout - full details TBD (hoping to find a place near Ikebukuro)！",
+            JAPANESE: "東京での結婚式の後、余韻を一緒に楽しみましょう！会場等の詳細は後日お知らせします（現在池袋周辺で検討中）！",
         },
         TIME: {
             ENGLISH: "TBD (8:00PM - 10:00PM?), Saturday, September 20, 2025",
@@ -205,8 +205,11 @@ export const STRINGS = {
                 JAPANESE: "子供も参加できますか？",
             },
             ANSWER: {
-                ENGLISH: "We'd love for our wedding to be your night off! Children who do not require supervision are welcome to attend.",
-                JAPANESE: "ゲストの皆さんに楽しいひとときを過ごしてもらいため、付き添いの必要のない10代のお子様は参加いただけます。",
+                ENGLISH: "For the California wedding, We'd love for our wedding to be your night off! Children who do not require supervision are welcome to attend.",
+                         "Little ones are welcome to attend the Tokyo wedding! Heads up: there will be loud music, and lots of sound and lighting effects!",
+                JAPANESE: "カリフォルニアの結婚式ではゲストの皆さんに楽しいひとときを過ごしてもらいため、付き添いの必要のない10代のお子様は参加いただけます。",
+                          "東京の結婚式では小さいお子様もご参加いただけます！光や音の演出等を予定していますので、あらかじめご理解をお願いします。"
+
             }
         },
         {
@@ -234,7 +237,8 @@ export const STRINGS = {
             },
             ANSWER: {
                 ENGLISH: [
-                    "For the California wedding, recommended hotels are Juniper Hotel Cupertino, Aloft Cupertino and DoubleTree by Hilton Hotel Campbell. Nightly rates start at around $190.",
+                    "For the California wedding, we have a hotel block booked at Sonesto Select San Jose Airport. It's about a 30 minute drive from Saratoga Springs, with nightly rates around $115. We'll share the booking link soon.",
+                    "Alternatively, Juniper Hotel Cupertino, Aloft Cupertino and DoubleTree by Hilton Hotel Campbell offer nicer accomodations, with nightly rates starting at around $190.",
                     "Airbnb is likely to be a less expensive alternative. If you're interested in joining a group Airbnb, please let us know!",
                     "",
                     "For the Japan wedding, the wedding venue is a hotel and they offer special pricing for wedding guests.",
@@ -243,7 +247,7 @@ export const STRINGS = {
                     "To hear more about about group accomodation options, please indicate your interest in the RSVP form!"
                 ],
                 JAPANESE: [
-                    "カリフォルニアの結婚式のおすすめホテルはJuniper Hotel Cupertino、Aloft Cupertino、またはDoubleTree by Hilton Hotel Campbellです。どのホテルも宿泊料金は＄190〜になります。",
+                    "カリフォルニアの結婚式ではSonesta Select San Jose Airportを　のおすすめホテルはJuniper Hotel Cupertino、Aloft Cupertino、またはDoubleTree by Hilton Hotel Campbellです。どのホテルも宿泊料金は＄190〜になります。",
                     "少しお手頃な宿泊オプションとして、大人数でのAirbnb一軒貸切に興味がある方は、お知らせください！",
                     "東京の結婚式に関しては、式場がホテルのため、結婚式のゲストは割引価格で滞在することができます。",
                     "ただし、希望するゲストの方全員のお部屋を確保できない可能性があるため、ご理解をお願いします。",
