@@ -88,8 +88,8 @@ export const STRINGS = {
             JAPANESE: "2025年8月15日 金曜日　17:00〜22:00 (受付開始 16:30)",
         },
         LOCATION: {
-            ENGLISH: "Saratoga Springs　22801 Big Basin Way, Saratoga, CA 95070",
-            JAPANESE: "Saratoga Springs　22801 Big Basin Way, Saratoga, CA 95070",
+            ENGLISH: "Saratoga Springs (22801 Big Basin Way, Saratoga, CA 95070)",
+            JAPANESE: "Saratoga Springs (22801 Big Basin Way, Saratoga, CA 95070)",
         },
         DRESS_CODE: {
             ENGLISH: "Cocktail attire: Dresses, jumpsuits, or dressy separates for women; suits or dress shirts with slacks for men. The venue is entirely outdoors, so wear something comfortable!",
@@ -132,8 +132,8 @@ export const STRINGS = {
             JAPANESE: "2025年9月20日 土曜日 15:10〜19:00 (受付開始 14:10) ",
         },
         LOCATION: {
-            ENGLISH: "Hotel Bell Classic Tokyo, 3-chōme-33-6 Minamiōtsuka, Toshima City, Tokyo 170-0005",
-            JAPANESE: "ホテルベルクラシック東京　〒170-0005 東京都豊島区南大塚 3-33-6 ",
+            ENGLISH: "Hotel Bell Classic Tokyo (3-chōme-33-6 Minamiōtsuka, Toshima City, Tokyo 170-0005)",
+            JAPANESE: "ホテルベルクラシック東京 (〒170-0005 東京都豊島区南大塚 3-33-6)",
         },
         DRESS_CODE: {
             ENGLISH: "Semi-formal. Japanese (or Indian) traditional attire is welcome too!",

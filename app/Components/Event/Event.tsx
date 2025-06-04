@@ -38,16 +38,18 @@ const Event: React.FC<EventProps> = ({ language, img, title, description, time, 
                     <strong>{STRINGS.TIME[language]}:</strong> {time}
                 </p>
                 <p className="text-lg text-gray-600 mb-2">
-                    <strong>{STRINGS.LOCATION[language]}:</strong> {location}{" "}
-                    {locationUrl && (
+                    <strong>{STRINGS.LOCATION[language]}:</strong>{" "}
+                    {locationUrl ? (
                         <a
                             href={locationUrl}
                             className="text-blue-500 hover:underline"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            (Google Maps)
+                            {location}
                         </a>
+                    ) : (
+                        location
                     )}
                 </p>
                 <p className="text-lg text-gray-600 mb-2">
