@@ -76,7 +76,7 @@ export const STRINGS = {
     },
     CALIFORNIA_WEDDING: {
         TITLE: {
-            ENGLISH: "California Ceremony",
+            ENGLISH: "California Wedding",
             JAPANESE: "カリフォルニアの結婚式",
         },
         DESCRIPTION: {
@@ -162,6 +162,102 @@ export const STRINGS = {
             JAPANESE: "お好きな格好でOK！",
         },
     },
+    ACCOMMODATIONS: {
+        ENGLISH: "Accommodations",
+        JAPANESE: "宿泊施設",
+    },
+    DATES_AVAILABLE: {
+        ENGLISH: "Dates Available",
+        JAPANESE: "利用可能日",
+    },
+    PRICE: {
+        ENGLISH: "Price",
+        JAPANESE: "料金",
+    },
+    TRANSPORTATION: {
+        ENGLISH: "Transportation",
+        JAPANESE: "交通手段",
+    },
+    BOOKING_INFO: {
+        ENGLISH: "Booking Info",
+        JAPANESE: "予約情報",
+    },
+    DISCOUNTED_RATE: {
+        ENGLISH: "discounted rate",
+        JAPANESE: "割引料金",
+    },
+    ALTERNATIVES: {
+        ENGLISH: "Alternatives",
+        JAPANESE: "代替案",
+    },
+    CALIFORNIA_ACCOMMODATIONS: {
+        TITLE: {
+            ENGLISH: "California Hotel Block",
+            JAPANESE: "カリフォルニア宿泊施設ブロック",
+        },
+        HOTEL_NAME: {
+            ENGLISH: "Sonesta Select - San Jose Airport",
+            JAPANESE: "ソネスタ セレクト - サンノゼ空港",
+        },
+        DATES_AVAILABLE: {
+            ENGLISH: "August 13 -> August 19",
+            JAPANESE: "8月13日〜8月19日",
+        },
+        PRICE: {
+            ENGLISH: "$100 per night (discounted wedding block)",
+            JAPANESE: "1泊100ドル（結婚式用の割引ブロック）",
+        },
+        LOCATION: {
+            ENGLISH: "1727 Technology Dr, San Jose, CA 95110",
+            JAPANESE: "1727 Technology Dr, サンノゼ, CA 95110",
+        },
+        TRANSPORTATION: {
+            ENGLISH: "The hotel offers a free shuttle to/from San Jose Airport! To get to the wedding venue (~30 minute drive), we're brainstorming carpool options!",
+            JAPANESE: "ホテルはサンノゼ空港との無料シャトルサービスを提供しています！結婚式場（車で約30分）へは、現在カープールの方法を検討中です！",
+        },
+        BOOKING_INFO: {
+            ENGLISH: "Click to access the ",
+            JAPANESE: "詳細はクリックしてください。",
+        },
+        ALTERNATIVES: {
+            ENGLISH: "Juniper Hotel Cupertino, Aloft Cupertino and DoubleTree by Hilton Hotel Campbell are closer to the wedding venue. Nightly rates start at around $190.",
+            JAPANESE: "Juniper Hotel Cupertino、Aloft Cupertino、DoubleTree by Hilton Hotel Campbellは結婚式場により近く、宿泊料金は1泊約190ドルからです。",
+        }
+    },
+    TOKYO_ACCOMMODATIONS: {
+        TITLE: {
+            ENGLISH: "Tokyo Hotel Block",
+            JAPANESE: "東京宿泊施設ブロック",
+        },
+        HOTEL_NAME: {
+            ENGLISH: "Hotel Bell Classic Tokyo (also our ceremony venue!)",
+            JAPANESE: "ホテルベルクラシック東京（挙式会場でもあります！）",
+        },
+        DATES_AVAILABLE: {
+            ENGLISH: "(Uhh daylon needs to confirm, will fill this out soon :D)",
+            JAPANESE: "（デイロンが確認中です。後ほど更新します :D）",
+        },
+        PRICE: {
+            ENGLISH: "1 guest: ¥13,300-¥16,700 | 2 guests: ¥18,700-¥25,500 | 3+guests  ¥33,300+",
+            JAPANESE: "1名：¥13,300〜¥16,700｜2名：¥18,700〜¥25,500｜3名以上：¥33,300〜",
+        },
+        LOCATION: {
+            ENGLISH: "3 Chome-33-6 Minamiotsuka, Toshima City, Tokyo 170-0005, Japan",
+            JAPANESE: "東京都豊島区南大塚3丁目33-6 〒170-0005",
+        },
+        TRANSPORTATION: {
+            ENGLISH: "This hotel is a 1 min walk from JR Yamanote-line Otsuka Station or a 5 min walk from Tokyo Metro Marunouchi-Line Shin-Otsuka Station.",
+            JAPANESE: "このホテルはJR山手線大塚駅から徒歩1分、東京メトロ丸ノ内線新大塚駅から徒歩5分です。",
+        },
+        BOOKING_INFO: {
+            ENGLISH: "Reach out to Rika or Daylon! They can help book your hotel reservation for you.",
+            JAPANESE: "リカまたはデイロンに連絡してください！宿泊予約をサポートしてくれます。",
+        },
+        ALTERNATIVES: {
+            ENGLISH: "There's many hotels in the area. I've found good deals on Booking.com!",
+            JAPANESE: "周辺には他にも多くのホテルがあります。Booking.comでお得なプランを見つけました！",
+        }
+    },
     FAQ: {
         ENGLISH: "FAQ",
         JAPANESE: "よくあるご質問",
@@ -205,10 +301,10 @@ export const STRINGS = {
                 JAPANESE: "子供も参加できますか？",
             },
             ANSWER: {
-                ENGLISH: "For the California wedding, We'd love for our wedding to be your night off! Children who do not require supervision are welcome to attend.",
-                         "Little ones are welcome to attend the Tokyo wedding! Heads up: there will be loud music, and lots of sound and lighting effects!",
-                JAPANESE: "カリフォルニアの結婚式ではゲストの皆さんに楽しいひとときを過ごしてもらいため、付き添いの必要のない10代のお子様は参加いただけます。",
-                          "東京の結婚式では小さいお子様もご参加いただけます！光や音の演出等を予定していますので、あらかじめご理解をお願いします。"
+                ENGLISH: ["For the California wedding, We'd love for our wedding to be your night off! Children who do not require supervision are welcome to attend.",
+                    "Little ones are welcome to attend the Tokyo wedding! Heads up: there will be loud music, and lots of sound and lighting effects!"],
+                JAPANESE: ["カリフォルニアの結婚式ではゲストの皆さんに楽しいひとときを過ごしてもらいため、付き添いの必要のない10代のお子様は参加いただけます。",
+                    "東京の結婚式では小さいお子様もご参加いただけます！光や音の演出等を予定していますので、あらかじめご理解をお願いします。"]
 
             }
         },
@@ -227,57 +323,6 @@ export const STRINGS = {
                     "カリフォルニアの結婚式ではブッフェ形式になります。お料理の内容はステーキ、パスタ、サラダなどです。",
                     "東京の結婚式に関しては検討中ですが、コース料理になる予定です。",
                     "アレルギー対応も可能なので、食事に関するリクエストがある場合は、出欠フォームにその旨ご記入ください。",
-                ],
-            }
-        },
-        {
-            QUESTION: {
-                ENGLISH: "Do you have hotel recommendations?",
-                JAPANESE: "滞在するのにおすすめな周辺ホテルはありますか？",
-            },
-            ANSWER: {
-                ENGLISH: [
-                    "For the California wedding, we have a hotel block booked at Sonesto Select San Jose Airport. It's about a 30 minute drive from Saratoga Springs, with nightly rates around $115. We'll share the booking link soon.",
-                    "Alternatively, Juniper Hotel Cupertino, Aloft Cupertino and DoubleTree by Hilton Hotel Campbell offer nicer accomodations, with nightly rates starting at around $190.",
-                    "Airbnb is likely to be a less expensive alternative. If you're interested in joining a group Airbnb, please let us know!",
-                    "",
-                    "For the Japan wedding, the wedding venue is a hotel and they offer special pricing for wedding guests.",
-                    "Please note that we might not be able to reserve rooms for everyone depending on the demand...there are so many other hotels in Tokyo as well!",
-                    "",
-                    "To hear more about about group accomodation options, please indicate your interest in the RSVP form!"
-                ],
-                JAPANESE: [
-                    "カリフォルニアの結婚式ではSonesta Select San Jose Airportを　のおすすめホテルはJuniper Hotel Cupertino、Aloft Cupertino、またはDoubleTree by Hilton Hotel Campbellです。どのホテルも宿泊料金は＄190〜になります。",
-                    "少しお手頃な宿泊オプションとして、大人数でのAirbnb一軒貸切に興味がある方は、お知らせください！",
-                    "東京の結婚式に関しては、式場がホテルのため、結婚式のゲストは割引価格で滞在することができます。",
-                    "ただし、希望するゲストの方全員のお部屋を確保できない可能性があるため、ご理解をお願いします。",
-                    "",
-                    "カリフォルニアでのグループ宿泊予約、またはホテルベルクラシック東京でのご宿泊にご興味のある方は、出欠フォームでその旨お知らせください。",
-                ],
-            }
-        },
-        {
-            QUESTION: {
-                ENGLISH: "Do you have transportation recommendations?",
-                JAPANESE: "交通アクセスについて教えてください。",
-            },
-            ANSWER: {
-                ENGLISH: [
-                    "For the California wedding, the nearest airport is San Jose International Airport, which is about a 30 minute drive from the wedding venue.",
-                    "The venue is easily accessible by car, and there's plenty of parking! Uber and Lyft are also great options.",
-                    "For folks coming from out of town, we're brainstorming ways to provide transportation assistance (shuttle, carpools).",
-                    "If you'd be interested in learning more, please indicate your interest in the RSVP form!",
-                    "",
-                    "The Tokyo wedding is a 1 min walk from JR Yamanote-line Otsuka Station or a 5 min walk from Tokyo Metro Marunouchi-Line Shin-Otsuka Station.",
-                ],
-                JAPANESE: [
-                    "カリフォルニアの会場は車で簡単にアクセス可能で、駐車場もたくさんあります！ ",
-                    "UberやLyftなどのタクシー配車アプリの利用もおすすめです。",
-                    "最寄りの空港であるサンノゼ国際空港から車で約30分ほどの距離です。",
-                    "若干遠くはなりますが、サンフランシスコ国際空港からのアクセスも可能です(車で50分程度）。",
-                    "遠方から来られる方のために、シャトルバスや車での送迎などの手配も現在検討中です。",
-                    "会場への送迎にご興味がある方は、出欠フォームでお知らせください！",
-                    "東京の会場はJR山手線大塚駅から徒歩１分、または東京メトロ丸ノ内線新大塚駅から徒歩５分です。"
                 ],
             }
         },

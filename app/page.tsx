@@ -8,6 +8,7 @@ import LanguageSelect from "./Components/LanguageSelect/LanguageSelect";
 import Welcome from "./Components/Welcome/Welcome";
 import OurStory from "./Components/OurStory/OurStory";
 import Events from "./Components/Events/Events";
+import Accommodations from "./Components/Accommodations/Accommodations";
 import Footer from "./Components/Footer/Footer";
 import Rsvp from "./Components/Rsvp/Rsvp";
 import Faq from "./Components/FAQ/Faq";
@@ -39,6 +40,7 @@ export default function Home() {
     const welcomeRef = useRef<HTMLDivElement | null>(null);
     const ourStoryRef = useRef<HTMLDivElement | null>(null);
     const eventsRef = useRef<HTMLDivElement | null>(null);
+    const accommodationsRef = useRef<HTMLDivElement | null>(null);
     const faqRef = useRef<HTMLDivElement | null>(null);
     const rsvpRef = useRef<HTMLDivElement | null>(null);
     const galleryRef = useRef<HTMLDivElement | null>(null);
@@ -46,6 +48,7 @@ export default function Home() {
         { ref: languageSelectRef, title: STRINGS.LANGUAGE[language] },
         { ref: welcomeRef, title: STRINGS.WELCOME[language] },
         { ref: ourStoryRef, title: STRINGS.OUR_STORY[language] },
+        { ref: accommodationsRef, title: STRINGS.ACCOMMODATIONS[language] },
         { ref: eventsRef, title: STRINGS.EVENTS[language] },
         { ref: faqRef, title: STRINGS.FAQ[language] },
         { ref: rsvpRef, title: STRINGS.RSVP[language] },
@@ -156,6 +159,9 @@ export default function Home() {
                     </div>
                     <div ref={eventsRef}>
                         <Events language={language} />
+                    </div>
+                    <div ref={accommodationsRef}>
+                        <Accommodations language={language} />
                     </div>
                     <div ref={faqRef}>
                         <Faq language={language} />
