@@ -40,7 +40,7 @@ const Accommodations: React.FC<AccommodationsProps> = ({ language }) => {
                             location={STRINGS.CALIFORNIA_ACCOMMODATIONS.LOCATION[language]}
                             locationUrl={"https://maps.app.goo.gl/9Zm6LNLjK1DkGiKS8"}
                             transportation={STRINGS.CALIFORNIA_ACCOMMODATIONS.TRANSPORTATION[language]}
-                            bookingInfo={STRINGS.CALIFORNIA_ACCOMMODATIONS.BOOKING_INFO[language]}
+                            bookingInfo={null}
                             bookingUrl={"https://www.sonesta.com/sonesta-select/ca/san-jose/sonesta-select-san-jose-airport?isGroupCode=true&groupCode=081325RIKA_1&checkin=2025-08-13&checkout=2025-08-19"}
                             alternatives={STRINGS.CALIFORNIA_ACCOMMODATIONS.ALTERNATIVES[language]}
                         />
@@ -57,6 +57,7 @@ const Accommodations: React.FC<AccommodationsProps> = ({ language }) => {
                             locationUrl={"https://maps.app.goo.gl/B8Enn4Pe99MZfM997"}
                             transportation={STRINGS.TOKYO_ACCOMMODATIONS.TRANSPORTATION[language]}
                             bookingInfo={STRINGS.TOKYO_ACCOMMODATIONS.BOOKING_INFO[language]}
+                            bookingUrl={null}
                             alternatives={STRINGS.TOKYO_ACCOMMODATIONS.ALTERNATIVES[language]}
                         />
                     </div>

@@ -15,12 +15,12 @@ interface AccommodationProps {
     location: string;
     locationUrl: string;
     transportation: string;
-    bookingInfo: string;
     bookingUrl?: string | null;
+    bookingInfo?: string | null;
     alternatives: string;
 }
 
-const Accommodation: React.FC<AccommodationProps> = ({ language, img, title, hotelName, datesAvailable, price, location, locationUrl, transportation, bookingInfo, bookingUrl, alternatives }) => {
+const Accommodation: React.FC<AccommodationProps> = ({ language, img, title, hotelName, datesAvailable, price, location, locationUrl, transportation, bookingUrl, bookingInfo, alternatives }) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -61,16 +61,19 @@ const Accommodation: React.FC<AccommodationProps> = ({ language, img, title, hot
                     <strong>{STRINGS.TRANSPORTATION[language]}:</strong> {transportation}
                 </p>
                 <p className="text-lg text-gray-600 mb-2">
-                    <strong>{STRINGS.BOOKING_INFO[language]}: </strong> {bookingInfo}
+                    <strong>{STRINGS.BOOKING[language]}: </strong> {bookingInfo}
                     {bookingUrl && (
-                        <a
-                            href={bookingUrl}
-                            className="text-blue-500 hover:underline"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {STRINGS.DISCOUNTED_RATE[language]}
-                        </a>
+                        <>
+                            {STRINGS.DETAILS[language]}{' '}
+                            <a
+                                href={bookingUrl}
+                                className="text-blue-500 hover:underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {STRINGS.HERE[language]}
+                            </a>
+                        </>
                     )}
                 </p>
                 <p className="text-lg text-gray-600 mb-2">

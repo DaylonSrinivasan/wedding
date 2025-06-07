@@ -176,17 +176,21 @@ export const STRINGS = {
         ENGLISH: "Transportation",
         JAPANESE: "交通手段",
     },
-    BOOKING_INFO: {
-        ENGLISH: "Booking Info",
-        JAPANESE: "予約情報",
+    BOOKING: {
+        ENGLISH: "Booking",
+        JAPANESE: "予約方法",
     },
-    DISCOUNTED_RATE: {
-        ENGLISH: "discounted rate",
-        JAPANESE: "割引料金",
+    DETAILS: {
+        ENGLISH: "Details",
+        JAPANESE: "詳細は"
+    },
+    HERE: {
+        ENGLISH: "here",
+        JAPANESE: "こちら",
     },
     ALTERNATIVES: {
         ENGLISH: "Alternatives",
-        JAPANESE: "代替案",
+        JAPANESE: "その他",
     },
     CALIFORNIA_ACCOMMODATIONS: {
         TITLE: {
@@ -213,9 +217,10 @@ export const STRINGS = {
             ENGLISH: "The hotel offers a free shuttle to/from San Jose Airport! To get to the wedding venue (~30 minute drive), we're brainstorming carpool options!",
             JAPANESE: "ホテルはサンノゼ空港との無料シャトルサービスを提供しています！結婚式場（車で約30分）へは、現在カープールの方法を検討中です！",
         },
+        // BOOKING_INFO is omitted, since we expect to have a URL to visit instead.
         BOOKING_INFO: {
-            ENGLISH: "Click to access the ",
-            JAPANESE: "詳細はクリックしてください。",
+            ENGLISH: "",
+            JAPANESE: "",
         },
         ALTERNATIVES: {
             ENGLISH: "Juniper Hotel Cupertino, Aloft Cupertino and DoubleTree by Hilton Hotel Campbell are closer to the wedding venue. Nightly rates start at around $190.",
