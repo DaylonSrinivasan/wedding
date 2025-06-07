@@ -1,5 +1,3 @@
-import RSVP from "@/app/Components/Rsvp/Rsvp";
-
 export enum Language {
     ENGLISH = "ENGLISH",
     JAPANESE = "JAPANESE",
