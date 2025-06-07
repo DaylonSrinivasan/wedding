@@ -64,7 +64,6 @@ const Accommodation: React.FC<AccommodationProps> = ({ language, img, title, hot
                     <strong>{STRINGS.BOOKING[language]}: </strong> {bookingInfo}
                     {bookingUrl && (
                         <>
-                            {STRINGS.DETAILS[language]}{' '}
                             <a
                                 href={bookingUrl}
                                 className="text-blue-500 hover:underline"

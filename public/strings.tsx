@@ -178,11 +178,7 @@ export const STRINGS = {
     },
     BOOKING: {
         ENGLISH: "Booking",
-        JAPANESE: "予約方法",
-    },
-    DETAILS: {
-        ENGLISH: "Details",
-        JAPANESE: "詳細は"
+        JAPANESE: "予約",
     },
     HERE: {
         ENGLISH: "here",
@@ -195,27 +191,27 @@ export const STRINGS = {
     CALIFORNIA_ACCOMMODATIONS: {
         TITLE: {
             ENGLISH: "California Hotel Block",
-            JAPANESE: "カリフォルニア宿泊施設ブロック",
+            JAPANESE: "カリフォルニアの指定ホテル",
         },
         HOTEL_NAME: {
             ENGLISH: "Sonesta Select - San Jose Airport",
-            JAPANESE: "ソネスタ セレクト - サンノゼ空港",
+            JAPANESE: "Sonesta Select - San Jose Airport",
         },
         DATES_AVAILABLE: {
             ENGLISH: "August 13 -> August 19",
             JAPANESE: "8月13日〜8月19日",
         },
         PRICE: {
-            ENGLISH: "$100 per night (discounted wedding block)",
-            JAPANESE: "1泊100ドル（結婚式用の割引ブロック）",
+            ENGLISH: "$100 per night + tax (discounted wedding block)",
+            JAPANESE: "1泊100ドル+税（割引料金）",
         },
         LOCATION: {
             ENGLISH: "1727 Technology Dr, San Jose, CA 95110",
-            JAPANESE: "1727 Technology Dr, サンノゼ, CA 95110",
+            JAPANESE: "1727 Technology Dr, San Jose, CA 95110",
         },
         TRANSPORTATION: {
             ENGLISH: "The hotel offers a free shuttle to/from San Jose Airport! To get to the wedding venue (~30 minute drive), we're brainstorming carpool options!",
-            JAPANESE: "ホテルはサンノゼ空港との無料シャトルサービスを提供しています！結婚式場（車で約30分）へは、現在カープールの方法を検討中です！",
+            JAPANESE: "サンノゼ空港〜ホテル間で無料のシャトルサービスを利用できます！結婚式場（車で約30分）へは、他のゲストとのライドシェアの方法を模索中です！",
         },
         // BOOKING_INFO is omitted, since we expect to have a URL to visit instead.
         BOOKING_INFO: {
@@ -224,21 +220,21 @@ export const STRINGS = {
         },
         ALTERNATIVES: {
             ENGLISH: "Juniper Hotel Cupertino, Aloft Cupertino and DoubleTree by Hilton Hotel Campbell are closer to the wedding venue. Nightly rates start at around $190.",
-            JAPANESE: "Juniper Hotel Cupertino、Aloft Cupertino、DoubleTree by Hilton Hotel Campbellは結婚式場により近く、宿泊料金は1泊約190ドルからです。",
+            JAPANESE: "式場おすすめホテルJuniper Hotel Cupertino、Aloft Cupertino、DoubleTree by Hilton Hotel Campbellは結婚式場により近い宿泊オプションになります。宿泊料金は1泊約190ドル〜です。",
         }
     },
     TOKYO_ACCOMMODATIONS: {
         TITLE: {
             ENGLISH: "Tokyo Hotel Block",
-            JAPANESE: "東京宿泊施設ブロック",
+            JAPANESE: "東京の指定ホテル",
         },
         HOTEL_NAME: {
             ENGLISH: "Hotel Bell Classic Tokyo (also our ceremony venue!)",
-            JAPANESE: "ホテルベルクラシック東京（挙式会場でもあります！）",
+            JAPANESE: "ホテルベルクラシック東京（結婚式会場）",
         },
         DATES_AVAILABLE: {
-            ENGLISH: "(Uhh daylon needs to confirm, will fill this out soon :D)",
-            JAPANESE: "（デイロンが確認中です。後ほど更新します :D）",
+            ENGLISH: "September 19 -> September 21",
+            JAPANESE: "9月19日〜9月21日",
         },
         PRICE: {
             ENGLISH: "1 guest: ¥13,300-¥16,700 | 2 guests: ¥18,700-¥25,500 | 3+guests  ¥33,300+",
@@ -253,12 +249,12 @@ export const STRINGS = {
             JAPANESE: "このホテルはJR山手線大塚駅から徒歩1分、東京メトロ丸ノ内線新大塚駅から徒歩5分です。",
         },
         BOOKING_INFO: {
-            ENGLISH: "Reach out to Rika or Daylon! They can help book your hotel reservation for you.",
-            JAPANESE: "リカまたはデイロンに連絡してください！宿泊予約をサポートしてくれます。",
+            ENGLISH: "Reach out to Rika or Daylon! Please note there is limited availability so we may not be able to accomodate everyone.",
+            JAPANESE: "私たちにお知らせください！ただし予約可能なお部屋の数に限りがあるため、希望するゲストの皆様全員のお部屋を確保できない可能性があります。",
         },
         ALTERNATIVES: {
             ENGLISH: "There's many hotels in the area. I've found good deals on Booking.com!",
-            JAPANESE: "周辺には他にも多くのホテルがあります。Booking.comでお得なプランを見つけました！",
+            JAPANESE: "周辺には他にも多くのホテルがあります。Booking.comでもお得なプランが結構あります！",
         }
     },
     FAQ: {
