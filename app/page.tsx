@@ -84,6 +84,21 @@ export default function Home() {
         };
     }, []);
 
+    useEffect(() => {
+        if (showHomepage) {
+            const hash = window.location.hash;
+            if (hash) {
+                const id = hash.replace("#", "");
+                const el = document.getElementById(id);
+                if (el) {
+                    setTimeout(() => {
+                        el.scrollIntoView({ behavior: "smooth" });
+                    }, 500); // Slight delay to let animation finish
+                }
+            }
+        }
+    }, [showHomepage]);
+
     const handleEnvelopeClick = () => {
         setTimeout(() => {
             setShowEnvelope(false);
@@ -148,28 +163,28 @@ export default function Home() {
                         </motion.div>
 
                     </AnimatePresence>
-                    <div ref={languageSelectRef}>
+                    <div id="language" ref={languageSelectRef}>
                         <LanguageSelect language={language} onLanguageChange={handleLanguageChange} />
                     </div>
-                    <div ref={welcomeRef}>
+                    <div id="welcome" ref={welcomeRef}>
                         <Welcome language={language} />
                     </div>
-                    <div ref={ourStoryRef}>
+                    <div id="our-store" ref={ourStoryRef}>
                         <OurStory language={language} />
                     </div>
-                    <div ref={eventsRef}>
+                    <div id="events" ref={eventsRef}>
                         <Events language={language} />
                     </div>
-                    <div ref={accommodationsRef}>
+                    <div id="accommodations" ref={accommodationsRef}>
                         <Accommodations language={language} />
                     </div>
-                    <div ref={faqRef}>
+                    <div id="faq" ref={faqRef}>
                         <Faq language={language} />
                     </div>
-                    <div ref={rsvpRef}>
+                    <div id="rsvp" ref={rsvpRef}>
                         <Rsvp language={language} />
                     </div>
-                    <div ref={galleryRef}>
+                    <div id="gallery" ref={galleryRef}>
                         <Gallery language={language} />
                     </div>
                     <div>
