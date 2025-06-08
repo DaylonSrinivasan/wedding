@@ -12,15 +12,17 @@ interface AccommodationProps {
     hotelName: string;
     datesAvailable: string;
     price: string;
-    location: string;
+    locationAddress: string;
     locationUrl: string;
-    transportation: string;
+    locationInfo: string;
     bookingUrl?: string | null;
-    bookingInfo?: string | null;
+    bookingInfo: string;
     alternatives: string;
+    transportation: string | string[];
+    carpoolUrl?: string | null;
 }
 
-const Accommodation: React.FC<AccommodationProps> = ({ language, img, title, hotelName, datesAvailable, price, location, locationUrl, transportation, bookingUrl, bookingInfo, alternatives }) => {
+const Accommodation: React.FC<AccommodationProps> = ({ language, img, title, hotelName, datesAvailable, price, locationAddress, locationUrl, locationInfo, bookingUrl, bookingInfo, alternatives, transportation, carpoolUrl }) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -45,23 +47,19 @@ const Accommodation: React.FC<AccommodationProps> = ({ language, img, title, hot
                     <strong>{STRINGS.PRICE[language]}:</strong> {price}
                 </p>
                 <p className="text-lg text-gray-600 mb-2">
-                    <strong>{STRINGS.LOCATION[language]}:</strong> {" "}
-                    {locationUrl && (
-                        <a
-                            href={locationUrl}
-                            className="text-blue-500 hover:underline"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {location}
-                        </a>
-                    )}
+                    <strong>{STRINGS.LOCATION[language]}:</strong>{" "}
+                    <a
+                        href={locationUrl}
+                        className="text-blue-500 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {locationAddress}
+                    </a>{" "}
+                    {locationInfo}
                 </p>
                 <p className="text-lg text-gray-600 mb-2">
-                    <strong>{STRINGS.TRANSPORTATION[language]}:</strong> {transportation}
-                </p>
-                <p className="text-lg text-gray-600 mb-2">
-                    <strong>{STRINGS.BOOKING[language]}: </strong> {bookingInfo}
+                    <strong>{STRINGS.BOOKING[language]}: </strong>
                     {bookingUrl && (
                         <>
                             <a
@@ -73,11 +71,46 @@ const Accommodation: React.FC<AccommodationProps> = ({ language, img, title, hot
                                 {STRINGS.HERE[language]}
                             </a>
                         </>
-                    )}
+                    )} {bookingInfo}
                 </p>
                 <p className="text-lg text-gray-600 mb-2">
                     <strong>{STRINGS.ALTERNATIVES[language]}:</strong> {alternatives}
                 </p>
+                <br></br>
+                <h2 className="text-3xl font-semibold text-gray-900 mb-2">{STRINGS.WEDDING_VENUE_TRANSPORTATION[language]}</h2>
+                <div className="text-lg text-gray-600 mb-2">
+                    {/* This is pretty hacky :^)
+                        
+                        Basically: We have a lot to say about California, and very little to say about Tokyo.
+                        So, if it's an array, we hardcode to make it look pretty for California (e.g., bulleted list).
+                        If it's a single element, we just output that element (Tokyo)
+                    */}
+                    {Array.isArray(transportation) ? (
+                        <>
+                            <div>
+                                {transportation[0]}
+                                <ul className="list-disc list-inside ml-4">
+                                    <li>{transportation[1]}</li>
+                                    <li>{transportation[2]}</li>
+                                </ul>
+                                {transportation[3]}{" "}
+                                {carpoolUrl && (
+                                    <a
+                                        href={carpoolUrl}
+                                        className="text-blue-500 hover:underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        {STRINGS.HERE[language]}
+                                    </a>)}
+                            </div>
+                        </>
+                    ) : (
+                        <div>
+                            {transportation}
+                        </div>)}
+                </div>
+
             </div>
         </motion.div>
     );

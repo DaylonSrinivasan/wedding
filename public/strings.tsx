@@ -176,6 +176,10 @@ export const STRINGS = {
         ENGLISH: "Transportation",
         JAPANESE: "交通手段",
     },
+    WEDDING_VENUE_TRANSPORTATION: {
+        ENGLISH: "Transportation to Wedding Venue",
+        JAPANESE: "交通アクセス",
+    },
     BOOKING: {
         ENGLISH: "Booking",
         JAPANESE: "予約",
@@ -198,7 +202,7 @@ export const STRINGS = {
             JAPANESE: "Sonesta Select - San Jose Airport",
         },
         DATES_AVAILABLE: {
-            ENGLISH: "August 13 -> August 19",
+            ENGLISH: "August 13 - August 19",
             JAPANESE: "8月13日〜8月19日",
         },
         PRICE: {
@@ -206,17 +210,32 @@ export const STRINGS = {
             JAPANESE: "1泊100ドル+税（割引料金）",
         },
         LOCATION: {
-            ENGLISH: "1727 Technology Dr, San Jose, CA 95110",
-            JAPANESE: "1727 Technology Dr, San Jose, CA 95110",
+            ADDRESS: {
+                ENGLISH: "1727 Technology Dr, San Jose, CA 95110",
+                JAPANESE: "1727 Technology Dr, San Jose, CA 95110",
+            },
+            INFO: {
+                ENGLISH: "(hotel offers free shuttle pickup to/from SJC!)",
+                JAPANESE: "(ホテル〜サンノゼ空港間で無料シャトルサービスを利用できます！)",
+            }
         },
         TRANSPORTATION: {
-            ENGLISH: "The hotel offers a free shuttle to/from San Jose Airport! To get to the wedding venue (~30 minute drive), we're brainstorming carpool options!",
-            JAPANESE: "サンノゼ空港〜ホテル間で無料のシャトルサービスを利用できます！結婚式場（車で約30分）へは、他のゲストとのライドシェアの方法を模索中です！",
+            ENGLISH: [
+                "We're going to try to organize carpools to help folks get to/from Saratoga Springs",
+                "For common locations (Sonesta Select Hotel, east bay, etc) it's likely we'll be able to pair riders to drivers.",
+                "But as a back-up, please plan to Uber/Lyft to the venue, or drive yourself! There's plenty of parking :)",
+                "To sign up (as a rider or driver), click ",
+            ],
+            JAPANESE: [
+                "式場までの移動手段として、ゲストの皆さんでのライドシェアを調整しています。",
+                "Sonesta Select Hotelや East Bayからお越しのゲストの皆さんには、車を出していただける方と送迎をご希望の方でマッチできる可能性が高いです。",
+                "マッチできない可能性もあるため、一応Uber・Lyftのご利用またはご自身での運転などの選択肢もご検討ください！ 駐車スペースはたくさんあります。",
+                "ライドシェアのご登録 (車を出していただける方・送迎をご希望の方）：",
+            ],
         },
-        // BOOKING_INFO is omitted, since we expect to have a URL to visit instead.
         BOOKING_INFO: {
-            ENGLISH: "",
-            JAPANESE: "",
+            ENGLISH: "(Note: Rooms are not guaranteed, so book early! Reach out to Daylon/Rika if you have any issues.)",
+            JAPANESE: "(Note: Rooms are not guaranteed, so book early! Reach out to Daylon/Rika if you have any issues.)",
         },
         ALTERNATIVES: {
             ENGLISH: "Juniper Hotel Cupertino, Aloft Cupertino and DoubleTree by Hilton Hotel Campbell are closer to the wedding venue. Nightly rates start at around $190.",
@@ -233,7 +252,7 @@ export const STRINGS = {
             JAPANESE: "ホテルベルクラシック東京（結婚式会場）",
         },
         DATES_AVAILABLE: {
-            ENGLISH: "September 19 -> September 21",
+            ENGLISH: "September 19 - September 21",
             JAPANESE: "9月19日〜9月21日",
         },
         PRICE: {
@@ -241,12 +260,18 @@ export const STRINGS = {
             JAPANESE: "1名：¥13,300〜¥16,700｜2名：¥18,700〜¥25,500｜3名以上：¥33,300〜",
         },
         LOCATION: {
-            ENGLISH: "3 Chome-33-6 Minamiotsuka, Toshima City, Tokyo 170-0005, Japan",
-            JAPANESE: "東京都豊島区南大塚3丁目33-6 〒170-0005",
+            ADDRESS: {
+                ENGLISH: "3 Chome-33-6 Minamiotsuka, Toshima City, Tokyo 170-0005, Japan",
+                JAPANESE: "東京都豊島区南大塚3丁目33-6 〒170-0005",
+            },
+            INFO: {  // Left blank - there's no additional info to share.
+                ENGLISH: "",
+                JAPANESE: "",
+            }
         },
         TRANSPORTATION: {
-            ENGLISH: "This hotel is a 1 min walk from JR Yamanote-line Otsuka Station or a 5 min walk from Tokyo Metro Marunouchi-Line Shin-Otsuka Station.",
-            JAPANESE: "このホテルはJR山手線大塚駅から徒歩1分、東京メトロ丸ノ内線新大塚駅から徒歩5分です。",
+            ENGLISH: "Hotel Bell Classic is a 1 min walk from JR Yamanote-line Otsuka Station or a 5 min walk from Tokyo Metro Marunouchi-Line Shin-Otsuka Station.",
+            JAPANESE: "JR山手線大塚駅から徒歩1分、東京メトロ丸ノ内線新大塚駅から徒歩5分です。",
         },
         BOOKING_INFO: {
             ENGLISH: "Reach out to Rika or Daylon! Please note there is limited availability so we may not be able to accomodate everyone.",

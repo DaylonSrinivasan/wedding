@@ -37,12 +37,14 @@ const Accommodations: React.FC<AccommodationsProps> = ({ language }) => {
                             hotelName={STRINGS.CALIFORNIA_ACCOMMODATIONS.HOTEL_NAME[language]}
                             datesAvailable={STRINGS.CALIFORNIA_ACCOMMODATIONS.DATES_AVAILABLE[language]}
                             price={STRINGS.CALIFORNIA_ACCOMMODATIONS.PRICE[language]}
-                            location={STRINGS.CALIFORNIA_ACCOMMODATIONS.LOCATION[language]}
+                            locationAddress={STRINGS.CALIFORNIA_ACCOMMODATIONS.LOCATION.ADDRESS[language]}
                             locationUrl={"https://maps.app.goo.gl/9Zm6LNLjK1DkGiKS8"}
-                            transportation={STRINGS.CALIFORNIA_ACCOMMODATIONS.TRANSPORTATION[language]}
-                            bookingInfo={null}
+                            locationInfo={STRINGS.CALIFORNIA_ACCOMMODATIONS.LOCATION.INFO[language]}
+                            bookingInfo={STRINGS.CALIFORNIA_ACCOMMODATIONS.BOOKING_INFO[language]}
                             bookingUrl={"https://www.sonesta.com/sonesta-select/ca/san-jose/sonesta-select-san-jose-airport?isGroupCode=true&groupCode=081325RIKA_1&checkin=2025-08-13&checkout=2025-08-19"}
                             alternatives={STRINGS.CALIFORNIA_ACCOMMODATIONS.ALTERNATIVES[language]}
+                            transportation={STRINGS.CALIFORNIA_ACCOMMODATIONS.TRANSPORTATION[language]}
+                            carpoolUrl={"https://docs.google.com/spreadsheets/d/1r4opL4Oic1_inNEgQcXZMetvnGRRKlbGiBb_wEsLlaE/edit?usp=sharing"}
                         />
                     </div>
                     <div>
@@ -53,12 +55,14 @@ const Accommodations: React.FC<AccommodationsProps> = ({ language }) => {
                             hotelName={STRINGS.TOKYO_ACCOMMODATIONS.HOTEL_NAME[language]}
                             datesAvailable={STRINGS.TOKYO_ACCOMMODATIONS.DATES_AVAILABLE[language]}
                             price={STRINGS.TOKYO_ACCOMMODATIONS.PRICE[language]}
-                            location={STRINGS.TOKYO_ACCOMMODATIONS.LOCATION[language]}
+                            locationAddress={STRINGS.TOKYO_ACCOMMODATIONS.LOCATION.ADDRESS[language]}
                             locationUrl={"https://maps.app.goo.gl/B8Enn4Pe99MZfM997"}
-                            transportation={STRINGS.TOKYO_ACCOMMODATIONS.TRANSPORTATION[language]}
+                            locationInfo={STRINGS.TOKYO_ACCOMMODATIONS.LOCATION.INFO[language]}
                             bookingInfo={STRINGS.TOKYO_ACCOMMODATIONS.BOOKING_INFO[language]}
                             bookingUrl={null}
                             alternatives={STRINGS.TOKYO_ACCOMMODATIONS.ALTERNATIVES[language]}
+                            transportation={STRINGS.TOKYO_ACCOMMODATIONS.TRANSPORTATION[language]}
+                            carpoolUrl={null}
                         />
                     </div>
                 </Slider>
