@@ -93,6 +93,7 @@ const Accommodation: React.FC<AccommodationProps> = ({ language, img, title, hot
                                     <li>{transportation[1]}</li>
                                     <li>{transportation[2]}</li>
                                 </ul>
+                                <br></br>
                                 {transportation[3]}{" "}
                                 {carpoolUrl && (
                                     <a
