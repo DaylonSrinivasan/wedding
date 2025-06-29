@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import SaratogaSpringsImage from '../../../public/images/SaratogaSprings.jpg';
 import BellClassicImage from '../../../public/images/bellclassic.jpg';
 import TokyoBarImage from '../../../public/images/TokyoBar.jpg';
-import BarImage from '../../../public/images/bar.jpg';
+import BJsImage from '../../../public/images/BJs-SanJose.jpg'
 
 import Event from '../Event/Event';
 import SectionHeader from '../SectionHeader/SectionHeader';
@@ -45,11 +45,12 @@ const Events: React.FC<EventsProps> = ({ language }) => {
                     <div>
                         <Event
                             language={language}
-                            img={BarImage}
+                            img={BJsImage}
                             title={STRINGS.CALIFORNIA_AFTER_SOCIAL.TITLE[language]}
                             description={STRINGS.CALIFORNIA_AFTER_SOCIAL.DESCRIPTION[language]}
                             time={STRINGS.CALIFORNIA_AFTER_SOCIAL.TIME[language]}
                             location={STRINGS.CALIFORNIA_AFTER_SOCIAL.LOCATION[language]}
+                            locationUrl={"https://maps.app.goo.gl/PCCinrr3F92MY4Xs6"}
                             dressCode={STRINGS.CALIFORNIA_AFTER_SOCIAL.DRESS_CODE[language]}
                         />
                     </div>

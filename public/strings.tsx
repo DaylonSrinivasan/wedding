@@ -96,25 +96,32 @@ export const STRINGS = {
     },
     CALIFORNIA_AFTER_SOCIAL: {
         TITLE: {
-            ENGLISH: "California After-Social",
-            JAPANESE: "カリフォルニア　ディナー / アフターパーティー",
+            ENGLISH: "Saturday social at BJ's restaurant and bar!",
+            JAPANESE: "BJ'sレストラン＆バーで土曜のソーシャル！",
         },
         DESCRIPTION: {
-            ENGLISH: "Help us post-game our California Wedding :D Daylon's going to reserve somewhere cool to hangout - full details TBD!",
-            JAPANESE: "カリフォルニアでの結婚式の後、余韻を一緒に楽しみましょう！ 会場等の詳細は後日お知らせします！",
+            ENGLISH: [
+                "Family-friendly buffet-style lunch hangout!",
+                "All-you-can-eat pizza, salads, and desserts on us! Drinks will be available for purchase at the bar :)"
+            ],
+            JAPANESE: [
+                "家族みんなで楽しめるビュッフェスタイルのランチ会！",
+                "ピザ、サラダ、デザートは食べ放題！ドリンクはバーで各自ご購入ください :)"
+            ],
         },
         TIME: {
-            ENGLISH: "TBD(8:00PM - 10:00PM?), Saturday, August 16, 2025",
-            JAPANESE: "2025年8月16日 土曜日 時間未定（20:00〜22:00?) ",
+            ENGLISH: "11:30AM-2:00PM, Saturday, August 16, 2025",
+            JAPANESE: "2025年8月16日（土）11:30〜14:00",
         },
         LOCATION: {
-            ENGLISH: "TBD",
-            JAPANESE: "未定",
+            ENGLISH: "511 Coleman Ave, San Jose, CA 95110, United States",
+            JAPANESE: "511 Coleman Ave, San Jose, CA 95110, United States",
         },
         DRESS_CODE: {
-            ENGLISH: "Be you :)",
-            JAPANESE: "お好きな格好でOK！",
+            ENGLISH: "Casual every-day wear is cool! Be yourself :)",
+            JAPANESE: "普段着でOK！リラックスしてお越しください :)",
         },
+
     },
     TOKYO_WEDDING: {
         TITLE: {
