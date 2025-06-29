@@ -9,7 +9,7 @@ interface EventProps {
     language: Language;
     img: StaticImageData;
     title: string;
-    description: string;
+    description: string | string[];
     time: string;
     location: string;
     dressCode: string;
