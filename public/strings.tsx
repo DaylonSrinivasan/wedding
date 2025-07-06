@@ -386,7 +386,7 @@ export const STRINGS = {
                 ENGLISH: [
                     "No registry! The gift we're most excited for is seeing everyone's smiles and sweet dance moves :)",
                     "We'll have a gift box at the wedding to gather any cards or small gifts you'd like to share with us!",
-                    "Or if you prefer to contribute to our wedding expenses, you're welcome to send a gift via Zelle at (925) 588 9935 - but this is super optional!",
+                    "Or if you prefer to contribute to our wedding expenses, you're welcome to send a gift via Zelle (925 588 9935) or Venmo (@Daylon-Srinivasan) - but this is super optional!",
                 ],
             }
         },
