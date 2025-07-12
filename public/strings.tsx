@@ -151,7 +151,7 @@ export const STRINGS = {
             JAPANESE: "東京　二次会",
         },
         DESCRIPTION: {
-            ENGLISH: "Help us post-game our Japan Wedding :D Rika's going to reserve somewhee cool to hangout - full details TBD (hoping to find a place near Ikebukuro)！",
+            ENGLISH: "Help us post-game our Japan Wedding :D Rika's going to reserve somewhere cool to hangout - full details TBD (hoping to find a place near Ikebukuro)！",
             JAPANESE: "東京での結婚式の後、余韻を一緒に楽しみましょう！会場等の詳細は後日お知らせします（現在池袋周辺で検討中）！",
         },
         TIME: {
